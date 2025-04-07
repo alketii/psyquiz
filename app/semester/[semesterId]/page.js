@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function SemesterPage() {
   const params = useParams();
-  const router = useRouter();
   const { semesterId } = params;
 
   const [semester, setSemester] = useState(null);
@@ -39,23 +40,19 @@ export default function SemesterPage() {
 
   return (
     <div className="flex flex-col min-h-screen p-8">
-      <header className="mb-8">
-        <div className="flex items-center mb-4">
-          <button
-            onClick={() => router.push("/")}
-            className="mr-4 text-blue-600 hover:text-blue-800"
-          >
-            ← Kthehu
-          </button>
-
-          <h1 className="text-3xl font-bold">Klasa</h1>
-        </div>
-        {semester && <p className="text-xl text-gray-700">{semester.name}</p>}
-      </header>
+      <Header
+        showBackButton={true}
+        title={semester?.name || "Semestri"}
+        breadcrumbs={[
+          { href: "/", label: "Kryefaqja" },
+          {
+            href: `/semester/${semesterId}`,
+            label: semester?.name || "Semestri",
+          },
+        ]}
+      />
 
       <main className="flex-grow">
-        <h2 className="text-2xl font-semibold mb-6">Lëndët e disponueshme</h2>
-
         {loading ? (
           <p>Duke ngarkuar lëndët...</p>
         ) : classes.length > 0 ? (
@@ -75,9 +72,7 @@ export default function SemesterPage() {
         )}
       </main>
 
-      <footer className="mt-10 pt-6 border-t border-gray-200 text-center text-gray-600">
-        <p>© {new Date().getFullYear()} A.R.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

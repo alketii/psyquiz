@@ -238,5 +238,109 @@
       "Përfshinë vetëm kategoritë e variablës, p.sh. gjinia.",
       "Përfshinë kategoritë e ranguara të variablës, p.sh. niveli i shkollimit."
     ]
+  },
+  {
+    "question": "Çfarë është rëndësia e shqyrtimit të literaturës në hulumtim?",
+    "answers": [
+      "Ofron një pasqyrë të përgjithshme të të menduarit dhe hulumtimit në temën e caktuar.",
+      "Nuk ka rëndësi në hulumtim.",
+      "Përdoret vetëm për të mbledhur të dhëna sekondare."
+    ]
+  },
+  {
+    "question": "Si duhet të artikulohen qëllimet e hulumtimit?",
+    "answers": [
+      "Duhet të jenë të artikuluara qartë dhe të kuptueshme për të tjerët.",
+      "Duhet të jenë të fshehta dhe të paqarta.",
+      "Nuk është e rëndësishme si artikulohen."
+    ]
+  },
+  {
+    "question": "Cilat janë dallimet mes hipotezave me kahje të caktuar dhe pa kahje të caktuar?",
+    "answers": [
+      "Hipotezat me kahje të caktuar parashikojnë drejtimin e ndërlidhjes, ndërsa ato pa kahje nuk e parashikojnë.",
+      "Të dyja llojet e hipotezave janë të njëjta.",
+      "Hipotezat pa kahje të caktuar parashikojnë drejtimin e ndërlidhjes, ndërsa ato me kahje nuk e parashikojnë."
+    ]
+  },
+  {
+    "question": "Cilat janë konsideratat kyçe në konstruktimin e mjeteve matëse të hulumtimit?",
+    "answers": [
+      "Njohuri për teori dhe hulumtime relevante, reflektim për karakteristikat e konceptit, dhe prova e mjetit matës.",
+      "Vetëm përpilimi i mjetit matës në formë drafti.",
+      "Nuk ka konsiderata të veçanta."
+    ]
+  },
+  {
+    "question": "Cilat janë llojet e ndryshme të reliabilitetit në mjetet matëse të hulumtimit?",
+    "answers": [
+      "Reliabiliteti i brendshëm, reliabiliteti në kohë të ndryshme, dhe forma alternative e reliabilitetit.",
+      "Vetëm reliabiliteti i brendshëm.",
+      "Nuk ka lloje të ndryshme të reliabilitetit."
+    ]
+  },
+  {
+    "question": "Cilat janë llojet e ndryshme të validitetit në mjetet matëse të hulumtimit?",
+    "answers": [
+      "Validiteti i dukjes, përmbajtësor, konkurues, i grupeve të njohura, parashikues, dhe diskriminues.",
+      "Vetëm validiteti i dukjes.",
+      "Nuk ka lloje të ndryshme të validitetit."
+    ]
+  },
+  {
+    "question": "Cilët faktorë ndikojnë në nivelin e përfaqësimit të popullatës së hulumtimit nga mostra?",
+    "answers": [
+      "Mënyra e përzgjedhjes së mostrës, madhësia e mostrës, dhe pjesëmarrja.",
+      "Vetëm madhësia e mostrës.",
+      "Nuk ka faktorë që ndikojnë në përfaqësimin e popullatës."
+    ]
+  },
+  {
+    "question": "Çfarë janë mjetet matëse të hulumtimit?",
+    "answers": [
+      "Pyetsorët, testet, inventarët, dhe shkallët e matjes.",
+      "Vetëm pyetsorët.",
+      "Nuk ka mjete matëse specifike në hulumtim."
+    ]
+  },
+  {
+    "question": "Çfarë janë testet e standardizuara?",
+    "answers": [
+      "Teste që përdorin materiale të njëjta dhe kanë procedura të shkruara për administrim dhe përllogaritje të pikëve.",
+      "Teste që ndryshojnë për çdo pjesëmarrës.",
+      "Teste që nuk kanë procedura të shkruara."
+    ]
+  },
+  {
+    "question": "Çfarë janë konceptet dhe konstruktet në hulumtim?",
+    "answers": [
+      "Terma që krijohen për komunikim dhe eficiencë, të cilat duhet të operacionalizohen për matje.",
+      "Vetëm ide të përgjithshme pa nevojë për matje.",
+      "Nuk kanë rëndësi në hulumtim."
+    ]
+  },
+  {
+    "question": "Cilat janë dimensionet e mjeteve matëse?",
+    "answers": [
+      "Njëdimensionale dhe shumëdimensionale.",
+      "Vetëm njëdimensionale.",
+      "Nuk ka dimensione të mjeteve matëse."
+    ]
+  },
+  {
+    "question": "Cilat janë aspektet e detajuara të reliabilitetit?",
+    "answers": [
+      "Reliabiliteti i brendshëm, në kohë të ndryshme, dhe forma alternative.",
+      "Vetëm reliabiliteti i brendshëm.",
+      "Nuk ka aspekte të detajuara të reliabilitetit."
+    ]
+  },
+  {
+    "question": "Cilat janë aspektet e detajuara të validitetit?",
+    "answers": [
+      "Validiteti i dukjes, përmbajtësor, konkurues, i grupeve të njohura, parashikues, dhe diskriminues.",
+      "Vetëm validiteti i dukjes.",
+      "Nuk ka aspekte të detajuara të validitetit."
+    ]
   }
 ]

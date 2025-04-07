@@ -1,11 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
+import Header from "../../../../../components/Header";
+import Footer from "../../../../../components/Footer";
+import { useSpring, animated } from "@react-spring/web";
 
 export default function QuizPage() {
   const params = useParams();
-  const router = useRouter();
   const { semesterId, classId } = params;
 
   const [quiz, setQuiz] = useState(null);
@@ -15,10 +17,35 @@ export default function QuizPage() {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [answerSubmitted, setAnswerSubmitted] = useState(false);
   const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
+  const [showNextButton, setShowNextButton] = useState(false);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
   const [correctAnswerIndices, setCorrectAnswerIndices] = useState([]);
   const [questionOrder, setQuestionOrder] = useState([]);
+
+  // Create all springs at the top level
+  const loadingSpring = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
+  const answerSprings = useSpring({
+    from: { opacity: 0, transform: "translateX(-20px)" },
+    to: { opacity: 1, transform: "translateX(0)" },
+    config: { tension: 300, friction: 20 },
+  });
+  const questionSpring = useSpring({
+    from: { opacity: 0, transform: "translateY(20px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+    config: { tension: 300, friction: 20 },
+  });
+  const nextButtonSpring = useSpring({
+    from: { opacity: 0, transform: "translateY(20px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+    config: { tension: 300, friction: 20 },
+  });
+  const resultsSpring = useSpring({
+    from: { opacity: 0, transform: "scale(0.9)" },
+    to: { opacity: 1, transform: "scale(1)" },
+    config: { tension: 300, friction: 20 },
+  });
+  const errorSpring = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
 
   useEffect(() => {
     async function fetchQuiz() {
@@ -101,46 +128,44 @@ export default function QuizPage() {
   };
 
   const handleAnswerSelect = (answerIndex) => {
-    setSelectedAnswer(answerIndex);
-    setAnswerSubmitted(true);
+    if (!answerSubmitted) {
+      setSelectedAnswer(answerIndex);
+      setAnswerSubmitted(true);
 
-    // Check if the selected answer is wrong
-    const isCorrect = answerIndex === correctAnswerIndices[currentQuestion];
-
-    if (!isCorrect) {
       // Show correct answer after 1.5 seconds
       setTimeout(() => {
         setShowCorrectAnswer(true);
+        if (answerIndex === correctAnswerIndices[currentQuestion]) {
+          setScore(score + 1);
+        }
+
+        // Show next button after another 1 second
+        setTimeout(() => {
+          setShowNextButton(true);
+        }, 1000);
       }, 1500);
-    } else {
-      // If correct answer is selected, show it immediately
-      setShowCorrectAnswer(true);
     }
   };
 
   const handleNextQuestion = () => {
-    if (selectedAnswer === null) return;
-
-    // Check if answer is correct
-    const isCorrect = selectedAnswer === correctAnswerIndices[currentQuestion];
-
-    if (isCorrect) {
-      setScore(score + 1);
-    }
-
     if (currentQuestion < quiz.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setSelectedAnswer(null);
       setAnswerSubmitted(false);
       setShowCorrectAnswer(false);
+      setShowNextButton(false);
     } else {
       setShowResults(true);
     }
   };
 
   const handleRestart = () => {
-    // Re-shuffle questions and answers
-    const { shuffledQuiz, correctIndices, questionOrder } = shuffleQuiz(quiz);
+    const { shuffledQuiz, correctIndices, questionOrder } = shuffleQuiz(
+      quiz.map((q, i) => ({
+        ...q,
+        answers: q.answers,
+      }))
+    );
     setQuiz(shuffledQuiz);
     setCorrectAnswerIndices(correctIndices);
     setQuestionOrder(questionOrder);
@@ -148,133 +173,155 @@ export default function QuizPage() {
     setSelectedAnswer(null);
     setAnswerSubmitted(false);
     setShowCorrectAnswer(false);
+    setShowNextButton(false);
     setScore(0);
     setShowResults(false);
   };
 
   return (
     <div className="flex flex-col min-h-screen p-8">
-      <header className="mb-8">
-        <div className="flex items-center mb-4">
-          <button
-            onClick={() =>
-              router.push(`/semester/${semesterId}/class/${classId}`)
-            }
-            className="mr-4 text-blue-600 hover:text-blue-800"
-          >
-            ← Kthehu
-          </button>
-
-          <h1 className="text-3xl font-bold">Klasa</h1>
-        </div>
-
-        {classData && (
-          <div>
-            <p className="text-lg text-gray-600">{classData.semester.name}</p>
-            <h2 className="text-2xl font-semibold">{classData.className}</h2>
-            <h3 className="text-xl font-medium mt-2">Kuizi</h3>
-          </div>
-        )}
-      </header>
+      <Header
+        showBackButton={true}
+        backPath={`/semester/${semesterId}/class/${classId}`}
+        title="Kuiz"
+        breadcrumbs={[
+          { href: "/", label: "Kryefaqja" },
+          {
+            href: `/semester/${semesterId}`,
+            label: classData?.semester.name || "Semestri",
+          },
+          {
+            href: `/semester/${semesterId}/class/${classId}`,
+            label: classData?.className || "Lënda",
+          },
+          {
+            href: `/semester/${semesterId}/class/${classId}/quiz`,
+            label: "Kuiz",
+          },
+        ]}
+      />
 
       <main className="flex-grow">
         {loading ? (
-          <p>Duke ngarkuar kuizin...</p>
+          <animated.p style={loadingSpring} className="text-center">
+            Duke ngarkuar kuizin...
+          </animated.p>
         ) : quiz && !showResults ? (
           <div className="max-w-2xl mx-auto">
-            <div className="mb-4">
-              <p className="text-gray-600">
-                Pyetja {currentQuestion + 1} nga {quiz.length}
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow">
-              <h3 className="text-xl font-semibold mb-4">
+            <animated.div
+              style={questionSpring}
+              className="bg-white rounded-lg shadow-md p-6"
+            >
+              <div className="mb-4">
+                <span className="text-gray-600">
+                  Pyetja {currentQuestion + 1} nga {quiz.length}
+                </span>
+              </div>
+              <h2 className="text-xl font-semibold mb-4">
                 {quiz[currentQuestion].question}
-              </h3>
-
+              </h2>
               <div className="space-y-3">
                 {quiz[currentQuestion].answers.map((answer, index) => {
-                  const isCorrectAnswer =
+                  const isCorrect =
+                    showCorrectAnswer &&
                     index === correctAnswerIndices[currentQuestion];
                   const isSelected = selectedAnswer === index;
-                  const showFeedback = answerSubmitted;
+                  const isWrong = showCorrectAnswer && isSelected && !isCorrect;
 
-                  let buttonClass =
-                    "w-full p-4 text-left rounded-lg border transition ";
+                  let backgroundColor = "white";
+                  let borderColor = "rgb(229 231 235)";
 
-                  if (showFeedback) {
-                    if (isCorrectAnswer && (showCorrectAnswer || isSelected)) {
-                      buttonClass += "border-green-500 bg-green-50";
-                    } else if (isSelected && !isCorrectAnswer) {
-                      buttonClass += "border-red-500 bg-red-50";
-                    } else if (isCorrectAnswer && showCorrectAnswer) {
-                      buttonClass += "border-green-500 bg-green-50";
-                    } else {
-                      buttonClass += "border-gray-200";
+                  if (showCorrectAnswer) {
+                    if (isCorrect) {
+                      backgroundColor = "rgb(220 252 231)";
+                      borderColor = "rgb(34 197 94)";
+                    } else if (isWrong) {
+                      backgroundColor = "rgb(254 226 226)";
+                      borderColor = "rgb(239 68 68)";
                     }
-                  } else {
-                    buttonClass += isSelected
-                      ? "border-blue-500 bg-blue-50"
-                      : "border-gray-200 hover:border-blue-300";
+                  } else if (isSelected) {
+                    backgroundColor = "rgb(254 249 195)";
+                    borderColor = "rgb(234 179 8)";
                   }
 
                   return (
-                    <button
+                    <animated.button
                       key={index}
                       onClick={() => handleAnswerSelect(index)}
-                      className={buttonClass}
+                      style={{
+                        ...answerSprings,
+                        transform: isSelected ? "scale(1.02)" : "scale(1)",
+                        backgroundColor,
+                        borderColor,
+                        animation: isCorrect
+                          ? "blink 0.5s ease-in-out 2"
+                          : "none",
+                      }}
+                      className="w-full text-left p-3 rounded-lg border transition-all duration-300"
                       disabled={answerSubmitted}
                     >
                       {answer}
-                    </button>
+                    </animated.button>
                   );
                 })}
               </div>
-
-              <button
-                onClick={handleNextQuestion}
-                disabled={!showCorrectAnswer}
-                className={`mt-6 w-full py-3 px-4 rounded-lg text-white font-medium transition ${
-                  !showCorrectAnswer
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-blue-600 hover:bg-blue-700"
-                }`}
-              >
-                {currentQuestion < quiz.length - 1
-                  ? "Pyetja Tjetër"
-                  : "Përfundo Kuizin"}
-              </button>
-            </div>
+              {showNextButton && (
+                <animated.div style={nextButtonSpring} className="mt-4">
+                  <animated.button
+                    onClick={handleNextQuestion}
+                    style={{
+                      transform: "scale(1)",
+                      transition: "transform 0.2s ease-in-out",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.transform = "scale(1.02)")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.transform = "scale(1)")
+                    }
+                    className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+                  >
+                    {currentQuestion < quiz.length - 1
+                      ? "Pyetja tjetër"
+                      : "Shiko rezultatet"}
+                  </animated.button>
+                </animated.div>
+              )}
+            </animated.div>
           </div>
         ) : showResults ? (
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="bg-white p-8 rounded-lg shadow">
-              <h3 className="text-2xl font-semibold mb-4">
-                Rezultatet e Kuizit
-              </h3>
-              <p className="text-4xl font-bold text-blue-600 mb-4">
-                {score} / {quiz.length}
+          <animated.div style={resultsSpring} className="max-w-2xl mx-auto">
+            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+              <h2 className="text-2xl font-semibold mb-4">Rezultatet</h2>
+              <p className="text-xl mb-4">
+                Pikët tuaja: {score} nga {quiz.length}
               </p>
-              <p className="text-gray-600 mb-6">
-                {Math.round((score / quiz.length) * 100)}% të sakta
-              </p>
-              <button
+              <animated.button
                 onClick={handleRestart}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition"
+                style={{
+                  transform: "scale(1)",
+                  transition: "transform 0.2s ease-in-out",
+                }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.transform = "scale(1.05)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.transform = "scale(1)")
+                }
+                className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition"
               >
-                Provo Përsëri
-              </button>
+                Rifillo kuizin
+              </animated.button>
             </div>
-          </div>
+          </animated.div>
         ) : (
-          <p>Kuizi nuk është i disponueshëm.</p>
+          <animated.p style={errorSpring}>
+            Kuizi nuk është i disponueshëm.
+          </animated.p>
         )}
       </main>
 
-      <footer className="mt-10 pt-6 border-t border-gray-200 text-center text-gray-600">
-        <p>© {new Date().getFullYear()} A.R.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

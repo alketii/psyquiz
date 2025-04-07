@@ -6,44 +6,43 @@ export async function GET(request, { params }) {
   const { semesterId, classId } = params;
 
   try {
-    // Validate IDs
-    if (!semesterId || !classId) {
+    // Read the classes.json file
+    const dataPath = path.join(process.cwd(), "data", "classes.json");
+    const content = await fs.readFile(dataPath, "utf-8");
+    const data = JSON.parse(content);
+
+    // Check if semester exists
+    if (!data.semesters[semesterId]) {
       return NextResponse.json(
-        { error: "Invalid semester or class ID" },
-        { status: 400 }
+        { error: "Semester not found" },
+        { status: 404 }
       );
     }
 
-    // Construct paths
-    const semesterPath = path.join(process.cwd(), "data", semesterId);
-    const classPath = path.join(semesterPath, classId);
+    // Find the class in the semester
+    const classItem = data.semesters[semesterId].classes.find(
+      (c) => c.id === classId
+    );
 
-    // Check if paths exist
-    try {
-      await fs.access(classPath);
-    } catch (error) {
+    if (!classItem) {
       return NextResponse.json({ error: "Class not found" }, { status: 404 });
     }
 
     // Check what files are available in the class directory
+    const semesterPath = path.join(process.cwd(), "data", semesterId);
+    const classPath = path.join(semesterPath, classId);
     const files = await fs.readdir(classPath);
-
-    // Format the response
-    const semNumber = semesterId.split("-")[1];
-
-    // Format class name from directory
-    const className = classId
-      .split("-")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
 
     return NextResponse.json({
       semester: {
         id: semesterId,
-        name: `Semester ${semNumber}`,
+        name: data.semesters[semesterId].name,
       },
-      classId,
-      className,
+      classId: classItem.id,
+      className: classItem.title,
+      professor: classItem.professor,
+      description: classItem.description,
+      credits: classItem.credits,
       hasMainMaterial: files.includes("main.md"),
       hasVocabulary: files.includes("vocabulary.md"),
       hasQuiz: files.includes("quiz.json"),

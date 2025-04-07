@@ -1,0 +1,20 @@
+{
+  "semesters": {
+    "sem-2": {
+      "id": "sem-2",
+      "name": "Semestri 2",
+      "classes": [
+        {
+          "id": "metodologji-e-hulumtimit-kuantitativ",
+          "title": "Metodologji e hulumtimit kuantitativ",
+          "professor": "Dr. Mimoza Telaku",
+          "description": "Metodologji e hulumtimit kuantitativ",
+          "credits": 6,
+          "hasMainMaterial": true,
+          "hasVocabulary": true,
+          "hasQuiz": true
+        }
+      ]
+    }
+  }
+}

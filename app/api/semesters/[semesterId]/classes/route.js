@@ -6,46 +6,33 @@ export async function GET(request, { params }) {
   const { semesterId } = params;
 
   try {
-    // Validate semester id format
-    if (!semesterId || !semesterId.startsWith("sem-")) {
-      return NextResponse.json(
-        { error: "Invalid semester ID format" },
-        { status: 400 }
-      );
-    }
+    // Read the classes.json file
+    const dataPath = path.join(process.cwd(), "data", "classes.json");
+    const content = await fs.readFile(dataPath, "utf-8");
+    const data = JSON.parse(content);
 
-    // Construct the path to the semester directory
-    const semesterPath = path.join(process.cwd(), "data", semesterId);
-
-    // Check if directory exists
-    try {
-      await fs.access(semesterPath);
-    } catch (error) {
+    // Check if semester exists
+    if (!data.semesters[semesterId]) {
       return NextResponse.json(
         { error: "Semester not found" },
         { status: 404 }
       );
     }
 
-    // Read the classes in the semester directory
-    const entries = await fs.readdir(semesterPath, { withFileTypes: true });
-    const classDirs = entries.filter((entry) => entry.isDirectory());
-
-    // Extract semester number for the response
-    const semNumber = semesterId.split("-")[1];
-
-    // Format the response
-    const classes = classDirs.map((dir) => ({
-      id: dir.name,
-      name: formatClassName(dir.name),
-    }));
+    const semester = data.semesters[semesterId];
 
     return NextResponse.json({
       semester: {
-        id: semesterId,
-        name: `Semester ${semNumber}`,
+        id: semester.id,
+        name: semester.name,
       },
-      classes,
+      classes: semester.classes.map((classItem) => ({
+        id: classItem.id,
+        name: classItem.title,
+        professor: classItem.professor,
+        description: classItem.description,
+        credits: classItem.credits,
+      })),
     });
   } catch (error) {
     console.error("Error fetching classes:", error);

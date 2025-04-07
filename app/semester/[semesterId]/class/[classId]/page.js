@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
+import Header from "../../../../components/Header";
+import Footer from "../../../../components/Footer";
 
 export default function ClassPage() {
   const params = useParams();
-  const router = useRouter();
   const { semesterId, classId } = params;
 
   const [classData, setClassData] = useState(null);
@@ -39,73 +40,91 @@ export default function ClassPage() {
 
   return (
     <div className="flex flex-col min-h-screen p-8">
-      <header className="mb-8">
-        <div className="flex items-center mb-4">
-          <button
-            onClick={() => router.push(`/semester/${semesterId}`)}
-            className="mr-4 text-blue-600 hover:text-blue-800"
-          >
-            ← Back to Classes
-          </button>
-
-          <h1 className="text-3xl font-bold">Klasa</h1>
-        </div>
-
-        {classData && (
-          <div>
-            <p className="text-lg text-gray-600">{classData.semester.name}</p>
-            <h2 className="text-2xl font-semibold">{classData.className}</h2>
-          </div>
-        )}
-      </header>
+      <Header
+        showBackButton={true}
+        backPath={`/semester/${semesterId}`}
+        title={classData?.className || "Lënda"}
+        breadcrumbs={[
+          { href: "/", label: "Kryefaqja" },
+          {
+            href: `/semester/${semesterId}`,
+            label: classData?.semester.name || "Semestri",
+          },
+          {
+            href: `/semester/${semesterId}/class/${classId}`,
+            label: classData?.className || "Lënda",
+          },
+        ]}
+      />
 
       <main className="flex-grow">
         {loading ? (
           <p>Duke ngarkuar lëndën...</p>
         ) : classData ? (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             <a
               href={`/data/${semesterId}/${classData.classId}/original.pdf`}
               download={`${classData.classId}-${semesterId}.pdf`}
-              // download="original.pdf"
-              className="block p-8 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition text-center"
+              className="block p-4 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
             >
-              <div className="text-4xl mb-4">📄</div>
-              <h3 className="text-xl font-semibold mb-2">Materiali original</h3>
-              <p className="text-gray-600">
-                Shkarkoni materialin origjinal të lëndës
-              </p>
+              <div className="flex items-center gap-4">
+                <div className="text-3xl md:text-4xl">📄</div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-semibold">
+                    Materiali original
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-600">
+                    Te gjitha slide-t e lëndës në një PDF
+                  </p>
+                </div>
+              </div>
             </a>
 
             <Link
               href={`/semester/${semesterId}/class/${classId}/material`}
-              className="block p-8 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition text-center"
+              className="block p-4 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
             >
-              <div className="text-4xl mb-4">📚</div>
-              <h3 className="text-xl font-semibold mb-2">
-                Materiali i përpunuar
-              </h3>
-              <p className="text-gray-600">
-                Shikoni përmbajtjen dhe materialet e lëndës
-              </p>
+              <div className="flex items-center gap-4">
+                <div className="text-3xl md:text-4xl">📚</div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-semibold">
+                    Materiali i përpunuar
+                  </h3>
+                  <p className="text-sm md:text-base text-gray-600">
+                    Materiali i përpunuar në PDF
+                  </p>
+                </div>
+              </div>
             </Link>
 
             <Link
               href={`/semester/${semesterId}/class/${classId}/vocabulary`}
-              className="block p-8 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition text-center"
+              className="block p-4 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
             >
-              <div className="text-4xl mb-4">📖</div>
-              <h3 className="text-xl font-semibold mb-2">Fjalor</h3>
-              <p className="text-gray-600">Shikoni fjalorin e lëndës</p>
+              <div className="flex items-center gap-4">
+                <div className="text-3xl md:text-4xl">📖</div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-semibold">Fjalor</h3>
+                  <p className="text-sm md:text-base text-gray-600">
+                    Fjalët kyçe të lëndës
+                  </p>
+                </div>
+              </div>
             </Link>
 
             <Link
               href={`/semester/${semesterId}/class/${classId}/quiz`}
-              className="block p-8 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition text-center"
+              className="block p-4 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
             >
-              <div className="text-4xl mb-4">❓</div>
-              <h3 className="text-xl font-semibold mb-2">Kuiz</h3>
-              <p className="text-gray-600">Testoni njohuritë tuaja me kuizet</p>
+              <div className="flex items-center gap-4">
+                <div className="text-3xl md:text-4xl">❓</div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-semibold">Kuiz</h3>
+                  <p className="text-sm md:text-base text-gray-600">
+                    Testoni njohuritë tuaja
+                  </p>
+                </div>
+              </div>
             </Link>
           </div>
         ) : (
@@ -113,9 +132,7 @@ export default function ClassPage() {
         )}
       </main>
 
-      <footer className="mt-10 pt-6 border-t border-gray-200 text-center text-gray-600">
-        <p>© {new Date().getFullYear()} A.R.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

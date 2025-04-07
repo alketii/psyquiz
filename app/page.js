@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [semesters, setSemesters] = useState([]);
@@ -25,14 +27,12 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen p-8">
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold">Klasa</h1>
-        <p className="text-gray-600"></p>
-      </header>
+      <Header
+        title="Semestrat"
+        breadcrumbs={[{ href: "/", label: "Kryefaqja" }]}
+      />
 
       <main className="flex-grow">
-        <h2 className="text-2xl font-semibold mb-6">Semestrat</h2>
-
         {loading ? (
           <p>Duke ngarkuar semestrat...</p>
         ) : semesters.length > 0 ? (
@@ -58,9 +58,7 @@ export default function Home() {
         )}
       </main>
 
-      <footer className="mt-10 pt-6 border-t border-gray-200 text-center text-gray-600">
-        <p>© {new Date().getFullYear()} A.R.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
