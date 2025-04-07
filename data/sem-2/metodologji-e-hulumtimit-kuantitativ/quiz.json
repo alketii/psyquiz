@@ -342,5 +342,93 @@
       "Vetëm validiteti i dukjes.",
       "Nuk ka aspekte të detajuara të validitetit."
     ]
+  },
+  {
+    "question": "Si e vendosim qëllimin e hulumtimit?",
+    "answers": [
+      "Duke arsyetuar aspektet kyçe dhe duke kuptuar qëllimin e hulumtimit.",
+      "Duke zgjedhur një temë të rastësishme.",
+      "Duke kopjuar qëllimet e hulumtimeve të tjera."
+    ]
+  },
+  {
+    "question": "Çfarë janë boshllëqet që i identifikojmë gjatë shqyrtimit të literaturës?",
+    "answers": [
+      "Aspektet që nuk janë hulumtuar mjaftueshëm dhe mund të eksplorohen më tej.",
+      "Aspektet që janë të njohura dhe të hulumtuara plotësisht.",
+      "Aspektet që nuk kanë rëndësi për hulumtimin."
+    ]
+  },
+  {
+    "question": "Çfarë janë supozimet punuese apo hipotezat?",
+    "answers": [
+      "Supozime për gjetjet e mundshme të hulumtimit që shpjegojnë ndërlidhjen mes variablave.",
+      "Përshkrime të detajuara të të dhënave të mbledhura.",
+      "Përfundime të hulumtimit."
+    ]
+  },
+  {
+    "question": "Cili lloj i hipotezave përfshin edhe hipotezën zero (H0)?",
+    "answers": [
+      "Modeli Neyman–Pearson për testimin e hipotezave.",
+      "Modeli i hipotezave të rastësishme.",
+      "Modeli i hipotezave të përzgjedhura."
+    ]
+  },
+  {
+    "question": "Cili lloj i hipotezave parashtrohet në eksperimente?",
+    "answers": [
+      "Hipoteza shkakore.",
+      "Hipoteza jo-shkakore.",
+      "Hipoteza e rastësishme."
+    ]
+  },
+  {
+    "question": "Si i quajmë konceptet në hulumtim dhe si bëhen të matshme?",
+    "answers": [
+      "Konceptet quhen konstrukte dhe bëhen të matshme duke i operacionalizuar.",
+      "Konceptet janë të matshme drejtpërdrejt.",
+      "Konceptet nuk kanë nevojë të maten."
+    ]
+  },
+  {
+    "question": "Çfarë janë indikatorët në hulumtim?",
+    "answers": [
+      "Dimensione që reflektojnë konceptin.",
+      "Variabla të pavarura.",
+      "Variabla të varura."
+    ]
+  },
+  {
+    "question": "Çfarë janë variablat kontrolluese dhe konstante?",
+    "answers": [
+      "Variablat kontrolluese nuk lejohet të ndryshohen gjatë eksperimentit, ndërsa variablat konstante mbahen konstante.",
+      "Variablat kontrolluese janë të pavarura, ndërsa variablat konstante janë të varura.",
+      "Variablat kontrolluese dhe konstante janë të njëjta."
+    ]
+  },
+  {
+    "question": "Çfarë janë variablat e observueshme dhe latente?",
+    "answers": [
+      "Variablat e observueshme mund të maten drejtpërdrejt, ndërsa variablat latente nxirren në mënyrë indirekte.",
+      "Të dyja llojet e variablave janë të pamatshme.",
+      "Variablat latente janë të matshme drejtpërdrejt."
+    ]
+  },
+  {
+    "question": "Cilat janë nivelet e matjes që përfshijnë vlera ranguse të njëjta?",
+    "answers": [
+      "Nivelet proporcionale dhe intervale.",
+      "Nivelet nominale dhe ordinale.",
+      "Nivelet e rastësishme."
+    ]
+  },
+  {
+    "question": "Çfarë janë mjetet matëse të hulumtimit dhe karakteristikat e tyre?",
+    "answers": [
+      "Pyetësorët, testet, inventarët, dhe shkallët e matjes që kanë konsistencën e rezultateve dhe të interpretimit.",
+      "Vetëm pyetësorët.",
+      "Nuk ka mjete matëse specifike në hulumtim."
+    ]
   }
 ]
