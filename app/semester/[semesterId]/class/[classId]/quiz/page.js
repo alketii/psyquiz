@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Header from "../../../../../components/Header";
 import Footer from "../../../../../components/Footer";
-import { useSpring, animated } from "@react-spring/web";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function QuizPage() {
   const params = useParams();
@@ -23,29 +23,31 @@ export default function QuizPage() {
   const [correctAnswerIndices, setCorrectAnswerIndices] = useState([]);
   const [questionOrder, setQuestionOrder] = useState([]);
 
-  // Create all springs at the top level
-  const loadingSpring = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
-  const answerSprings = useSpring({
-    from: { opacity: 0, transform: "translateX(-20px)" },
-    to: { opacity: 1, transform: "translateX(0)" },
-    config: { tension: 300, friction: 20 },
-  });
-  const questionSpring = useSpring({
-    from: { opacity: 0, transform: "translateY(20px)" },
-    to: { opacity: 1, transform: "translateY(0)" },
-    config: { tension: 300, friction: 20 },
-  });
-  const nextButtonSpring = useSpring({
-    from: { opacity: 0, transform: "translateY(20px)" },
-    to: { opacity: 1, transform: "translateY(0)" },
-    config: { tension: 300, friction: 20 },
-  });
-  const resultsSpring = useSpring({
-    from: { opacity: 0, transform: "scale(0.9)" },
-    to: { opacity: 1, transform: "scale(1)" },
-    config: { tension: 300, friction: 20 },
-  });
-  const errorSpring = useSpring({ from: { opacity: 0 }, to: { opacity: 1 } });
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
+  const questionVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
+  const answerVariants = {
+    hidden: { x: -20, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
+
+  const nextButtonVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
+
+  const resultsVariants = {
+    hidden: { scale: 0.9, opacity: 0 },
+    visible: { scale: 1, opacity: 1 },
+  };
 
   useEffect(() => {
     async function fetchQuiz() {
@@ -203,13 +205,20 @@ export default function QuizPage() {
 
       <main className="flex-grow">
         {loading ? (
-          <animated.p style={loadingSpring} className="text-center">
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+            className="text-center"
+          >
             Duke ngarkuar kuizin...
-          </animated.p>
+          </motion.p>
         ) : quiz && !showResults ? (
           <div className="max-w-2xl mx-auto">
-            <animated.div
-              style={questionSpring}
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={questionVariants}
               className="bg-white rounded-lg shadow-md p-6"
             >
               <div className="mb-4">
@@ -245,12 +254,14 @@ export default function QuizPage() {
                   }
 
                   return (
-                    <animated.button
+                    <motion.button
                       key={index}
+                      initial="hidden"
+                      animate="visible"
+                      variants={answerVariants}
+                      transition={{ delay: index * 0.1 }}
                       onClick={() => handleAnswerSelect(index)}
                       style={{
-                        ...answerSprings,
-                        transform: isSelected ? "scale(1.02)" : "scale(1)",
                         backgroundColor,
                         borderColor,
                         animation: isCorrect
@@ -261,63 +272,60 @@ export default function QuizPage() {
                       disabled={answerSubmitted}
                     >
                       {answer}
-                    </animated.button>
+                    </motion.button>
                   );
                 })}
               </div>
               {showNextButton && (
-                <animated.div style={nextButtonSpring} className="mt-4">
-                  <animated.button
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={nextButtonVariants}
+                  className="mt-4"
+                >
+                  <motion.button
                     onClick={handleNextQuestion}
-                    style={{
-                      transform: "scale(1)",
-                      transition: "transform 0.2s ease-in-out",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.transform = "scale(1.02)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.currentTarget.style.transform = "scale(1)")
-                    }
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
                     className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
                   >
                     {currentQuestion < quiz.length - 1
                       ? "Pyetja tjetër"
                       : "Shiko rezultatet"}
-                  </animated.button>
-                </animated.div>
+                  </motion.button>
+                </motion.div>
               )}
-            </animated.div>
+            </motion.div>
           </div>
         ) : showResults ? (
-          <animated.div style={resultsSpring} className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <h2 className="text-2xl font-semibold mb-4">Rezultatet</h2>
-              <p className="text-xl mb-4">
-                Pikët tuaja: {score} nga {quiz.length}
-              </p>
-              <animated.button
-                onClick={handleRestart}
-                style={{
-                  transform: "scale(1)",
-                  transition: "transform 0.2s ease-in-out",
-                }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.transform = "scale(1.05)")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.transform = "scale(1)")
-                }
-                className="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition"
-              >
-                Rifillo kuizin
-              </animated.button>
-            </div>
-          </animated.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={resultsVariants}
+            className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6 text-center"
+          >
+            <h2 className="text-2xl font-bold mb-4">Rezultatet</h2>
+            <p className="text-xl mb-4">
+              Pikët tuaja: {score} nga {quiz.length}
+            </p>
+            <motion.button
+              onClick={handleRestart}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+            >
+              Rifillo Kuizin
+            </motion.button>
+          </motion.div>
         ) : (
-          <animated.p style={errorSpring}>
+          <motion.p
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+            className="text-center"
+          >
             Kuizi nuk është i disponueshëm.
-          </animated.p>
+          </motion.p>
         )}
       </main>
 
