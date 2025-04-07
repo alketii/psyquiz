@@ -1,0 +1,242 @@
+[
+  {
+    "question": "Çfarë është hulumtimi?",
+    "answers": [
+      "Kërkim i njohurive dhe studim sistematik që përfshin mbledhjen, analizimin dhe interpretimin e të dhënave kuantitative.",
+      "Vetëm analizë e të dhënave nga burime sekondare.",
+      "Një mënyrë për të rritur besimin e pjesëmarrësve në hulumtim."
+    ]
+  },
+  {
+    "question": "Çfarë është popullata e hulumtimit?",
+    "answers": [
+      "Të gjithë individët me karakteristika të cilat synohen të studiohen.",
+      "Një grup i vogël që përfaqëson komunitetin lokal.",
+      "Vetëm individët që përgjigjen në pyetësor."
+    ]
+  },
+  {
+    "question": "Çfarë është hipoteza zero (H0)?",
+    "answers": [
+      "Pretendimi se nuk ka ndërlidhje mes variablave.",
+      "Supozimi se ka një ndërlidhje pozitive mes variablave.",
+      "Përshkrimi i një variabli të vetëm në hulumtim."
+    ]
+  },
+  {
+    "question": "Çfarë përfaqëson operacionalizimi?",
+    "answers": [
+      "Konvertimi i koncepteve në variabla të matshme.",
+      "Përzgjedhja e një mostre të rastësishme.",
+      "Kategorizimi i literaturës në bazë të relevancës."
+    ]
+  },
+  {
+    "question": "Cili është ndryshimi mes të dhënave primare dhe sekondare?",
+    "answers": [
+      "Primaret mblidhen për herë të parë për qëllime specifike të hulumtimit, sekondaret janë mbledhur më herët për qëllime të tjera.",
+      "Primaret janë gjithmonë të papërpunuara, sekondaret të analizuar.",
+      "Primaret janë më të sakta se sekondaret në çdo rast."
+    ]
+  },
+  {
+    "question": "Çfarë është një variabël e pavarur?",
+    "answers": [
+      "Variabla e presupozuar për të ndikuar në variablën e varur.",
+      "Variabla që nuk ndikohet nga asnjë faktor.",
+      "Variabla që ndryshon në mënyrë të paparashikueshme."
+    ]
+  },
+  {
+    "question": "Çfarë është një variabël e varur?",
+    "answers": [
+      "Variabla e presupozuar për t'u ndikuar nga variabla e pavarur.",
+      "Variabla që ndikon në të gjitha variablat e tjera.",
+      "Variabla që mbetet konstante gjatë eksperimentit."
+    ]
+  },
+  {
+    "question": "Çfarë është një hipotezë alternative (H1)?",
+    "answers": [
+      "Pretendimi se ekziston ndërlidhje mes variablave.",
+      "Pretendimi se nuk ka ndërlidhje mes variablave.",
+      "Pretendimi se variablat janë të pavarura."
+    ]
+  },
+  {
+    "question": "Çfarë është një mostër e rastësishme e thjeshtë?",
+    "answers": [
+      "Secili pjesëtar i popullatës së hulumtimit ka gjasa të barabarta për t'u përzgjedhur në mostër.",
+      "Përzgjedhja e pjesëmarrësve në bazë të preferencave personale.",
+      "Përzgjedhja e pjesëmarrësve nga një grup i caktuar."
+    ]
+  },
+  {
+    "question": "Çfarë është validiteti i dukjes?",
+    "answers": [
+      "Kontrollimi i secilit ajtem se a matë konstruktin e caktuar nga pamja e ajtemeve.",
+      "Verifikimi i mjetit matës se a korrelojnë të dhënat e mbledhura me mjete të tjera.",
+      "Verifikimi se shkalla e matjes jep rezultate të ndryshme për grupet që parashikhen të kenë dallime."
+    ]
+  },
+  {
+    "question": "Çfarë është një variabël kontrolluese?",
+    "answers": [
+      "Nuk lejohet të ndryshohet në mënyrë të paparashikueshme gjatë eksperimentit.",
+      "Variabla që ndikohet nga variabla e pavarur.",
+      "Variabla që ndryshon në çdo eksperiment."
+    ]
+  },
+  {
+    "question": "Çfarë është një variabël konstante?",
+    "answers": [
+      "Mbahet konstant gjatë eksperimentit.",
+      "Variabla që ndryshon në çdo eksperiment.",
+      "Variabla që ndikohet nga variabla e varur."
+    ]
+  },
+  {
+    "question": "Çfarë është një variabël organizmike?",
+    "answers": [
+      "Karakteristika natyrore si mosha, gjinia, gjatësia, pesha, etj.",
+      "Variabla që ndikohet nga faktorë të jashtëm.",
+      "Variabla që ndryshon në çdo eksperiment."
+    ]
+  },
+  {
+    "question": "Çfarë është një mostër e sistematike?",
+    "answers": [
+      "Përzgjedhja e mostrës duke filluar nga një pikënisje e rastësishme dhe vazhdohet me përzgjedhje në bazë të intervaleve periodike të fiksuara.",
+      "Përzgjedhja e pjesëmarrësve në bazë të preferencave personale.",
+      "Përzgjedhja e pjesëmarrësve nga një grup i caktuar."
+    ]
+  },
+  {
+    "question": "Çfarë është një mostër e stratifikuar?",
+    "answers": [
+      "Ndarja e popullatës në grupe homogjene dhe përzgjedhja e pjesëmarrësve në mënyrë proporcionale me përqindjen e tyre në popullatë.",
+      "Përzgjedhja e pjesëmarrësve në bazë të preferencave personale.",
+      "Përzgjedhja e pjesëmarrësve nga një grup i caktuar."
+    ]
+  },
+  {
+    "question": "Çfarë është një mostër e kuotave?",
+    "answers": [
+      "Përzgjedhja jo e rastësishme e një numri ose proporcioni të paracaktuar njësish, të quajtura kuota.",
+      "Përzgjedhja e pjesëmarrësve në bazë të preferencave personale.",
+      "Përzgjedhja e pjesëmarrësve nga një grup i caktuar."
+    ]
+  },
+  {
+    "question": "Çfarë është një mostër e konvenueshme?",
+    "answers": [
+      "Përzgjedhja e individëve më lehtë të qasshëm, si miqtë, fqinjët dhe kalimtarët e rastit.",
+      "Përzgjedhja e pjesëmarrësve në bazë të preferencave personale.",
+      "Përzgjedhja e pjesëmarrësve nga një grup i caktuar."
+    ]
+  },
+  {
+    "question": "Çfarë është një mostër vullnetare?",
+    "answers": [
+      "Përfshin anëtarët e popullatës që e përzgjedhin vetveten për mostër.",
+      "Përzgjedhja e pjesëmarrësve në bazë të preferencave personale.",
+      "Përzgjedhja e pjesëmarrësve nga një grup i caktuar."
+    ]
+  },
+  {
+    "question": "Çfarë është një mostër e 'topit/ortekut të dëborës'?",
+    "answers": [
+      "Përzgjedhja e subjekteve specifike që referojnë persona me specifika të njëjta.",
+      "Përzgjedhja e pjesëmarrësve në bazë të preferencave personale.",
+      "Përzgjedhja e pjesëmarrësve nga një grup i caktuar."
+    ]
+  },
+  {
+    "question": "Çfarë është një mostër e qëllimshme?",
+    "answers": [
+      "Teknikë e përzgjedhjes së mostrës ku hulumtuesi mbështetet në gjykimin e tij/saj për karakteristikat e caktuara.",
+      "Përzgjedhja e pjesëmarrësve në bazë të preferencave personale.",
+      "Përzgjedhja e pjesëmarrësve nga një grup i caktuar."
+    ]
+  },
+  {
+    "question": "Çfarë është një hipotezë me kahje të caktuar?",
+    "answers": [
+      "Parashikohet drejtimi i ndërlidhjes (pozitiv/negativ).",
+      "Nuk parashikohet drejtimi i ndërlidhjes.",
+      "Pretendimi se nuk ka ndërlidhje mes variablave."
+    ]
+  },
+  {
+    "question": "Çfarë është një hipotezë pa kahje të caktuar?",
+    "answers": [
+      "Nuk parashikohet drejtimi i ndërlidhjes.",
+      "Parashikohet drejtimi i ndërlidhjes (pozitiv/negativ).",
+      "Pretendimi se nuk ka ndërlidhje mes variablave."
+    ]
+  },
+  {
+    "question": "Çfarë është një hipotezë shkakore?",
+    "answers": [
+      "Parashikohet ndikimi i variablës së pavarur në atë të varur.",
+      "Parashikohet vetëm ndërlidhja e variablave.",
+      "Pretendimi se nuk ka ndërlidhje mes variablave."
+    ]
+  },
+  {
+    "question": "Çfarë është një hipotezë jo-shkakore?",
+    "answers": [
+      "Parashikohet vetëm ndërlidhja e variablave.",
+      "Parashikohet ndikimi i variablës së pavarur në atë të varur.",
+      "Pretendimi se nuk ka ndërlidhje mes variablave."
+    ]
+  },
+  {
+    "question": "Çfarë është një variabël e observueshme?",
+    "answers": [
+      "Mund të maten ose observohen drejtpërdrejt.",
+      "Nxirren në mënyrë indirekte me anë të metodave të analizës faktoriale.",
+      "Nuk mund të maten ose observohen drejtpërdrejt."
+    ]
+  },
+  {
+    "question": "Çfarë është një variabël latente?",
+    "answers": [
+      "Nxirren në mënyrë indirekte me anë të metodave të analizës faktoriale.",
+      "Mund të maten ose observohen drejtpërdrejt.",
+      "Nuk mund të maten ose observohen drejtpërdrejt."
+    ]
+  },
+  {
+    "question": "Çfarë është një nivel matjeje nominal?",
+    "answers": [
+      "Përfshinë vetëm kategoritë e variablës, p.sh. gjinia.",
+      "Përfshinë kategoritë e ranguara të variablës, p.sh. niveli i shkollimit.",
+      "Përfshinë dallimet e njëjta në mes vlerave ranguese të variablës."
+    ]
+  },
+  {
+    "question": "Çfarë është një nivel matjeje ordinale?",
+    "answers": [
+      "Përfshinë kategoritë e ranguara të variablës, p.sh. niveli i shkollimit.",
+      "Përfshinë vetëm kategoritë e variablës, p.sh. gjinia.",
+      "Përfshinë dallimet e njëjta në mes vlerave ranguese të variablës."
+    ]
+  },
+  {
+    "question": "Çfarë është një nivel matjeje intervale?",
+    "answers": [
+      "Përfshinë dallimet e njëjta në mes vlerave ranguese të variablës, por pa pikë fillestare natyrale.",
+      "Përfshinë vetëm kategoritë e variablës, p.sh. gjinia.",
+      "Përfshinë kategoritë e ranguara të variablës, p.sh. niveli i shkollimit."
+    ]
+  },
+  {
+    "question": "Çfarë është një nivel matjeje proporcionale?",
+    "answers": [
+      "Përfshinë dallimet e njëjta në mes të vlerave ranguese dhe pikën fillestare natyrale.",
+      "Përfshinë vetëm kategoritë e variablës, p.sh. gjinia.",
+      "Përfshinë kategoritë e ranguara të variablës, p.sh. niveli i shkollimit."
+    ]
+  }
+]
