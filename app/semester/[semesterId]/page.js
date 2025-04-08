@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import { Book, BookOpen, BookText, Brain } from "lucide-react";
 
 export default function SemesterPage() {
   const params = useParams();
@@ -63,7 +64,42 @@ export default function SemesterPage() {
                 key={classItem.id}
                 className="block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
               >
-                <h3 className="text-xl font-semibold">{classItem.name}</h3>
+                <div className="flex items-center gap-4">
+                  <div className="text-3xl">
+                    <Book size={32} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold pb-2">
+                      {classItem.name}
+                    </h3>
+                    <div className="text-gray-600">
+                      <span className="text-sm">{classItem.professor}</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-2 mt-4">
+                  {classItem.hasMainMaterial && (
+                    <Book
+                      className="w-5 h-5 text-blue-500"
+                      title="Materiali kryesor"
+                    />
+                  )}
+                  {classItem.hasVocabulary && (
+                    <Brain className="w-5 h-5 text-green-500" title="Fjalor" />
+                  )}
+                  {classItem.hasAlternativeMaterial && (
+                    <BookOpen
+                      className="w-5 h-5 text-purple-500"
+                      title="Material alternativ"
+                    />
+                  )}
+                  {classItem.hasQuiz && (
+                    <BookText
+                      className="w-5 h-5 text-orange-500"
+                      title="Kuiz"
+                    />
+                  )}
+                </div>
               </Link>
             ))}
           </div>

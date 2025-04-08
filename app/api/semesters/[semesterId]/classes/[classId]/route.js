@@ -43,9 +43,10 @@ export async function GET(request, { params }) {
       professor: classItem.professor,
       description: classItem.description,
       credits: classItem.credits,
-      hasMainMaterial: files.includes("main.md"),
-      hasVocabulary: files.includes("vocabulary.md"),
-      hasQuiz: files.includes("quiz.json"),
+      hasMainMaterial: classItem.hasMainMaterial,
+      hasVocabulary: classItem.hasVocabulary,
+      hasAlternativeMaterial: classItem.hasAlternativeMaterial,
+      hasQuiz: classItem.hasQuiz,
     });
   } catch (error) {
     console.error("Error fetching class details:", error);

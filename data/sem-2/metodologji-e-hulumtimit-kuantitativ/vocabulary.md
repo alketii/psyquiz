@@ -1,5 +1,3 @@
-# Metodologji e hulumtimit kuantitativ (Sem II) - e përmirësuar
-
 ## 1. Hulumtimi
 
 1. **Hulumtim**  

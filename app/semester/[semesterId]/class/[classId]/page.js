@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import Header from "../../../../components/Header";
 import Footer from "../../../../components/Footer";
+import { FileText, BookOpen, BookMarked, Trophy } from "lucide-react";
 
 export default function ClassPage() {
   const params = useParams();
@@ -68,10 +69,12 @@ export default function ClassPage() {
               className="block p-4 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
             >
               <div className="flex items-center gap-4">
-                <div className="text-3xl md:text-4xl">📄</div>
+                <div className="text-3xl md:text-4xl">
+                  <FileText size={32} />
+                </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold">
-                    Materiali original
+                    Materiali origjinal
                   </h3>
                   <p className="text-sm md:text-base text-gray-600">
                     Te gjitha slide-t e lëndës në një PDF
@@ -80,52 +83,100 @@ export default function ClassPage() {
               </div>
             </a>
 
-            <Link
-              href={`/semester/${semesterId}/class/${classId}/material`}
-              className="block p-4 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
+            <div
+              className={`block p-4 md:p-6 rounded-lg border ${
+                classData.hasAlternativeMaterial
+                  ? "bg-white border-gray-200 shadow-md hover:bg-gray-50 transition"
+                  : "bg-gray-50 border-gray-100"
+              }`}
             >
-              <div className="flex items-center gap-4">
-                <div className="text-3xl md:text-4xl">📚</div>
+              <Link
+                href={
+                  classData.hasAlternativeMaterial
+                    ? `/semester/${semesterId}/class/${classId}/material`
+                    : "#"
+                }
+                className={`flex items-center gap-4 ${
+                  !classData.hasAlternativeMaterial && "cursor-not-allowed"
+                }`}
+              >
+                <div className="text-3xl md:text-4xl">
+                  <BookOpen size={32} />
+                </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold">
                     Materiali i përpunuar
                   </h3>
                   <p className="text-sm md:text-base text-gray-600">
-                    Materiali i përpunuar në PDF
+                    {classData.hasAlternativeMaterial
+                      ? "Materiali i përpunuar në PDF"
+                      : "Së shpejti..."}
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
 
-            <Link
-              href={`/semester/${semesterId}/class/${classId}/vocabulary`}
-              className="block p-4 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
+            <div
+              className={`block p-4 md:p-6 rounded-lg border ${
+                classData.hasVocabulary
+                  ? "bg-white border-gray-200 shadow-md hover:bg-gray-50 transition"
+                  : "bg-gray-50 border-gray-100"
+              }`}
             >
-              <div className="flex items-center gap-4">
-                <div className="text-3xl md:text-4xl">📖</div>
+              <Link
+                href={
+                  classData.hasVocabulary
+                    ? `/semester/${semesterId}/class/${classId}/vocabulary`
+                    : "#"
+                }
+                className={`flex items-center gap-4 ${
+                  !classData.hasVocabulary && "cursor-not-allowed"
+                }`}
+              >
+                <div className="text-3xl md:text-4xl">
+                  <BookMarked size={32} />
+                </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold">Fjalor</h3>
                   <p className="text-sm md:text-base text-gray-600">
-                    Fjalët kyçe të lëndës
+                    {classData.hasVocabulary
+                      ? "Fjalët kyçe të lëndës"
+                      : "Së shpejti..."}
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
 
-            <Link
-              href={`/semester/${semesterId}/class/${classId}/quiz`}
-              className="block p-4 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition"
+            <div
+              className={`block p-4 md:p-6 rounded-lg border ${
+                classData.hasQuiz
+                  ? "bg-white border-gray-200 shadow-md hover:bg-gray-50 transition"
+                  : "bg-gray-50 border-gray-100"
+              }`}
             >
-              <div className="flex items-center gap-4">
-                <div className="text-3xl md:text-4xl">❓</div>
+              <Link
+                href={
+                  classData.hasQuiz
+                    ? `/semester/${semesterId}/class/${classId}/quiz`
+                    : "#"
+                }
+                className={`flex items-center gap-4 ${
+                  !classData.hasQuiz && "cursor-not-allowed"
+                }`}
+              >
+                <div className="text-3xl md:text-4xl">
+                  <Trophy size={32} />
+                </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold">Kuiz</h3>
                   <p className="text-sm md:text-base text-gray-600">
-                    Testoni njohuritë tuaja
+                    {classData.hasQuiz
+                      ? "Testoni njohuritë tuaja"
+                      : "Së shpejti..."}
                   </p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </div>
         ) : (
           <p>Lënda nuk u gjet.</p>

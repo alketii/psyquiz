@@ -5,6 +5,28 @@
       "name": "Semestri 2",
       "classes": [
         {
+          "id": "psikologjia-e-kreativitetit-dhe-femijet-me-dhunti",
+          "title": "Psikologjia e kreativitetit dhe fëmijët me dhunti",
+          "professor": "Dr. Sevim Mustafa",
+          "description": "Psikologjia e kreativitetit dhe fëmijët me dhunti",
+          "credits": 6,
+          "hasMainMaterial": true,
+          "hasVocabulary": true,
+          "hasAlternativeMaterial": false,
+          "hasQuiz": true
+        },
+        {
+          "id": "teorite-e-keshillimit-psikologjik",
+          "title": "Teoritë e këshillimit psikologjik",
+          "professor": "Dr. Ertan Basha",
+          "description": "Teoritë e këshillimit psikologjik",
+          "credits": 6,
+          "hasMainMaterial": true,
+          "hasVocabulary": false,
+          "hasAlternativeMaterial": true,
+          "hasQuiz": false
+        },
+        {
           "id": "metodologji-e-hulumtimit-kuantitativ",
           "title": "Metodologji e hulumtimit kuantitativ",
           "professor": "Dr. Mimoza Telaku",
@@ -12,6 +34,7 @@
           "credits": 6,
           "hasMainMaterial": true,
           "hasVocabulary": true,
+          "hasAlternativeMaterial": true,
           "hasQuiz": true
         }
       ]

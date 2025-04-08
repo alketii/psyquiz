@@ -53,11 +53,12 @@ export default function MaterialPage() {
   }, [semesterId, classId]);
 
   return (
-    <div className="flex flex-col min-h-screen p-8">
+    <div className="flex flex-col min-h-screen">
       <Header
         showBackButton={true}
         backPath={`/semester/${semesterId}/class/${classId}`}
         title="Materiali i përpunuar"
+        addPadding={true}
         breadcrumbs={[
           { href: "/", label: "Kryefaqja" },
           {
