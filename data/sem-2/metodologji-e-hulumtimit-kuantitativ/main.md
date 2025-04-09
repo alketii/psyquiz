@@ -1,7 +1,4 @@
 # Metodologji e hulumtimit kuantitativ
-**Mimoza Telaku, PhD**
-
----
 
 ## 1. Literatura, qëllimi, dhe hipotezat
 

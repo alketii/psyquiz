@@ -1,8 +1,76 @@
 import { marked } from "marked";
+import { useEffect, useState } from "react";
 
 export default function MarkdownContent({ content }) {
+  const [toc, setToc] = useState([]);
+
+  useEffect(() => {
+    if (!content) return;
+
+    // Extract headings from content
+    const headingRegex = /^(#{1,6})\s+(.+)$/gm;
+    const headings = [];
+    let match;
+
+    while ((match = headingRegex.exec(content)) !== null) {
+      const level = match[1].length;
+      const text = match[2].trim();
+      const id = text
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, "")
+        .replace(/\s+/g, "-");
+
+      headings.push({
+        level,
+        text,
+        id,
+      });
+    }
+
+    setToc(headings);
+  }, [content]);
+
+  // Configure marked to add IDs to headings
+  useEffect(() => {
+    marked.use({
+      renderer: {
+        heading(text, level) {
+          const id = text
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, "")
+            .replace(/\s+/g, "-");
+          return `<h${level} id="${id}">${text}</h${level}>`;
+        },
+      },
+    });
+  }, []);
+
+  const renderToc = () => {
+    if (toc.length === 0) return null;
+
+    return (
+      <div className="toc">
+        <h2>Tabela e Përmbajtjeve</h2>
+        <ul>
+          {toc.map((heading, index) => (
+            <li
+              key={index}
+              style={{
+                marginLeft: `${(heading.level - 1) * 20}px`,
+                marginBottom: heading.level === 1 ? "8px" : "4px",
+              }}
+            >
+              <a href={`#${heading.id}`}>{heading.text}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+
   return (
     <div className="markdown-content">
+      {toc.length > 0 && renderToc()}
       <div
         className="w-full py-0 px-4 sm:px-6 md:px-8"
         dangerouslySetInnerHTML={{ __html: marked.parse(content) }}
@@ -24,6 +92,39 @@ export default function MarkdownContent({ content }) {
         .markdown-content > div {
           max-width: 768px;
           margin: 0 auto;
+        }
+
+        .markdown-content .toc {
+          max-width: 768px;
+          margin: 0 auto 2rem;
+          padding: 1rem 1.5rem;
+          background-color: transparent;
+          border-radius: 0;
+          border-left: none;
+        }
+
+        .markdown-content .toc h2 {
+          margin-top: 0;
+          margin-bottom: 0.75rem;
+          font-size: 1.25rem;
+          color: #1f2937;
+        }
+
+        .markdown-content .toc ul {
+          list-style-type: disc;
+          padding-left: 1.5rem;
+          margin-bottom: 0;
+        }
+
+        .markdown-content .toc a {
+          color: #2563eb;
+          text-decoration: none;
+          font-size: 0.95rem;
+          display: inline-block;
+        }
+
+        .markdown-content .toc a:hover {
+          text-decoration: underline;
         }
 
         .markdown-content h1 {
