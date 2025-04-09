@@ -36,6 +36,17 @@
           "hasVocabulary": true,
           "hasAlternativeMaterial": true,
           "hasQuiz": true
+        },
+        {
+          "id": "proceset-kognitive",
+          "title": "Proceset kognitive",
+          "professor": "Dr. Afërdita Ahmeti",
+          "description": "Proceset kognitive",
+          "credits": 6,
+          "hasMainMaterial": true,
+          "hasVocabulary": false,
+          "hasAlternativeMaterial": false,
+          "hasQuiz": false
         }
       ]
     }
