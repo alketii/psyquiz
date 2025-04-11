@@ -1,11 +1,88 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import Header from "../../../../components/Header";
 import Footer from "../../../../components/Footer";
-import { FileText, BookOpen, BookMarked, Trophy } from "lucide-react";
+import { FileText, BookOpen, BookMarked, Trophy, X } from "lucide-react";
+import ReactInstaStories from "react-insta-stories";
+
+// Define a set of complementary color schemes
+const COLOR_SCHEMES = [
+  {
+    bg: "#e6f7ff",
+    text: "#0050b3",
+    gradient: "linear-gradient(135deg, #4158D0, #C850C0)",
+    titleBg: "rgba(255, 255, 255, 0.85)",
+    textBg: "rgba(255, 255, 255, 0.85)",
+    titleColor: "#4158D0",
+    textColor: "#333333",
+  }, // Blue-Pink
+  {
+    bg: "#f6ffed",
+    text: "#389e0d",
+    gradient: "linear-gradient(135deg, #43e97b, #38f9d7)",
+    titleBg: "rgba(255, 255, 255, 0.85)",
+    textBg: "rgba(255, 255, 255, 0.85)",
+    titleColor: "#2a9d8f",
+    textColor: "#333333",
+  }, // Green-Teal
+  {
+    bg: "#fff2e8",
+    text: "#873800",
+    gradient: "linear-gradient(135deg, #fa709a, #fee140)",
+    titleBg: "rgba(255, 255, 255, 0.85)",
+    textBg: "rgba(255, 255, 255, 0.85)",
+    titleColor: "#e76f51",
+    textColor: "#333333",
+  }, // Pink-Yellow
+  {
+    bg: "#f9f0ff",
+    text: "#531dab",
+    gradient: "linear-gradient(135deg, #7F7FD5, #91EAE4)",
+    titleBg: "rgba(255, 255, 255, 0.85)",
+    textBg: "rgba(255, 255, 255, 0.85)",
+    titleColor: "#5e60ce",
+    textColor: "#333333",
+  }, // Purple-Teal
+  {
+    bg: "#fcffe6",
+    text: "#5b8c00",
+    gradient: "linear-gradient(135deg, #F6D365, #FCE38A)",
+    titleBg: "rgba(255, 255, 255, 0.85)",
+    textBg: "rgba(255, 255, 255, 0.85)",
+    titleColor: "#bc6c25",
+    textColor: "#333333",
+  }, // Yellow
+  {
+    bg: "#e6fffb",
+    text: "#006d75",
+    gradient: "linear-gradient(135deg, #0093E9, #80D0C7)",
+    titleBg: "rgba(255, 255, 255, 0.85)",
+    textBg: "rgba(255, 255, 255, 0.85)",
+    titleColor: "#0077b6",
+    textColor: "#333333",
+  }, // Blue-Teal
+  {
+    bg: "#fff0f6",
+    text: "#c41d7f",
+    gradient: "linear-gradient(135deg, #FF9A9E, #FECFEF)",
+    titleBg: "rgba(255, 255, 255, 0.85)",
+    textBg: "rgba(255, 255, 255, 0.85)",
+    titleColor: "#d00000",
+    textColor: "#333333",
+  }, // Pink
+  {
+    bg: "#f0f5ff",
+    text: "#1d39c4",
+    gradient: "linear-gradient(135deg, #5F72BD, #9B94FA)",
+    titleBg: "rgba(255, 255, 255, 0.85)",
+    textBg: "rgba(255, 255, 255, 0.85)",
+    titleColor: "#3a0ca3",
+    textColor: "#333333",
+  }, // Indigo-Purple
+];
 
 export default function ClassPage() {
   const params = useParams();
@@ -13,6 +90,11 @@ export default function ClassPage() {
 
   const [classData, setClassData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [showFullStories, setShowFullStories] = useState(false);
+  const [currentStoryIndex, setCurrentStoryIndex] = useState(0);
+  const storiesContainerRef = useRef(null);
+  const touchStartY = useRef(0);
+  const [categoryColorMap, setCategoryColorMap] = useState({});
 
   useEffect(() => {
     async function fetchClassData() {
@@ -27,6 +109,22 @@ export default function ClassPage() {
 
         const data = await response.json();
         setClassData(data);
+
+        // Generate color map for categories
+        if (data?.stories) {
+          const uniqueCategories = [
+            ...new Set(data.stories.map((story) => story.header.heading)),
+          ];
+          const categoryColors = {};
+
+          uniqueCategories.forEach((category, index) => {
+            // Cycle through color schemes
+            const colorScheme = COLOR_SCHEMES[index % COLOR_SCHEMES.length];
+            categoryColors[category] = colorScheme;
+          });
+
+          setCategoryColorMap(categoryColors);
+        }
       } catch (error) {
         console.error("Error loading class data:", error);
       } finally {
@@ -38,6 +136,189 @@ export default function ClassPage() {
       fetchClassData();
     }
   }, [semesterId, classId]);
+
+  useEffect(() => {
+    // Add touch event listeners when fullscreen stories are shown
+    if (showFullStories && storiesContainerRef.current) {
+      const container = storiesContainerRef.current;
+
+      const handleTouchStart = (e) => {
+        touchStartY.current = e.touches[0].clientY;
+      };
+
+      const handleTouchMove = (e) => {
+        const touchY = e.touches[0].clientY;
+        const yDiff = touchY - touchStartY.current;
+
+        // If swipe down is detected (yDiff > 100)
+        if (yDiff > 100) {
+          setShowFullStories(false);
+        }
+      };
+
+      container.addEventListener("touchstart", handleTouchStart, {
+        passive: true,
+      });
+      container.addEventListener("touchmove", handleTouchMove, {
+        passive: true,
+      });
+
+      return () => {
+        container.removeEventListener("touchstart", handleTouchStart);
+        container.removeEventListener("touchmove", handleTouchMove);
+      };
+    }
+  }, [showFullStories]);
+
+  // Get unique categories from stories
+  const getUniqueCategories = () => {
+    if (!classData?.stories) return [];
+    const categories = new Set();
+    classData.stories.forEach((story) => {
+      categories.add(story.header.heading);
+    });
+    return Array.from(categories);
+  };
+
+  // Get the first story index for a category
+  const getCategoryFirstIndex = (category) => {
+    return (
+      classData?.stories.findIndex(
+        (story) => story.header.heading === category
+      ) || 0
+    );
+  };
+
+  // Get color scheme for a category
+  const getCategoryColorScheme = (category) => {
+    return categoryColorMap[category] || COLOR_SCHEMES[0];
+  };
+
+  // Transform stories with colors
+  const transformedStories = classData?.stories?.map((story) => {
+    const colors = getCategoryColorScheme(story.header.heading);
+
+    return {
+      content: (props) => (
+        <div
+          style={{
+            background: colors.gradient,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            position: "relative",
+          }}
+        >
+          {/* Header at the top */}
+          <div
+            style={{
+              position: "absolute",
+              top: "10%",
+              left: 0,
+              width: "100%",
+              textAlign: "center",
+              padding: "0 20px",
+            }}
+          >
+            <h3
+              style={{
+                fontWeight: "bold",
+                marginBottom: 10,
+                color: "white",
+                textShadow: "0px 1px 2px rgba(0,0,0,0.3)",
+                fontSize: "1.8rem",
+              }}
+            >
+              {story.header.heading}
+            </h3>
+            <p
+              style={{
+                fontSize: "1.1em",
+                color: "rgba(255,255,255,0.9)",
+                opacity: 0.8,
+                textShadow: "0px 1px 1px rgba(0,0,0,0.2)",
+              }}
+            >
+              {story.header.subheading}
+            </p>
+          </div>
+
+          {/* Main content centered */}
+          <div
+            style={{
+              height: "70%",
+              width: "90%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                textAlign: "center",
+                width: "100%",
+              }}
+            >
+              <h2
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "2.2em",
+                  marginBottom: 20,
+                  color: colors.titleColor,
+                  display: "inline-block",
+                  backgroundColor: colors.titleBg,
+                  padding: "12px 20px",
+                  borderRadius: "6px",
+                  boxShadow: "0px 2px 4px rgba(0,0,0,0.2)",
+                  width: "auto",
+                  maxWidth: "100%",
+                }}
+              >
+                {story.content.title}
+              </h2>
+              <p
+                style={{
+                  color: colors.textColor,
+                  backgroundColor: colors.textBg,
+                  padding: "16px 20px",
+                  borderRadius: "6px",
+                  display: "block",
+                  width: "100%",
+                  boxShadow: "0px 2px 4px rgba(0,0,0,0.2)",
+                  fontWeight: "500",
+                  lineHeight: "1.6",
+                  fontSize: "1.3em",
+                }}
+              >
+                {story.content.text}
+              </p>
+            </div>
+          </div>
+        </div>
+      ),
+      duration: story.duration || 5000,
+    };
+  });
+
+  const handleStoryCircleClick = (index) => {
+    setCurrentStoryIndex(index);
+    setShowFullStories(true);
+  };
+
+  const handleCloseFullStories = () => {
+    setShowFullStories(false);
+  };
+
+  const uniqueCategories = getUniqueCategories();
 
   return (
     <div className="flex flex-col min-h-screen p-8">
@@ -57,6 +338,92 @@ export default function ClassPage() {
           },
         ]}
       />
+
+      {uniqueCategories.length > 0 && (
+        <div className="w-full mb-8">
+          <div className="flex overflow-x-auto py-4 no-scrollbar">
+            <div className="flex space-x-4 px-4">
+              {uniqueCategories.map((category, index) => {
+                const colors = getCategoryColorScheme(category);
+                const categoryIndex = getCategoryFirstIndex(category);
+
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center cursor-pointer"
+                    onClick={() => handleStoryCircleClick(categoryIndex)}
+                  >
+                    <div
+                      className="w-16 h-16 rounded-full p-0.5 mb-1"
+                      style={{
+                        border: `2px solid white`,
+                        background: colors.gradient,
+                        boxShadow: "0px 2px 4px rgba(0,0,0,0.2)",
+                      }}
+                    >
+                      <div
+                        className="w-full h-full rounded-full flex items-center justify-center overflow-hidden"
+                        style={{
+                          background: colors.gradient,
+                        }}
+                      >
+                        <div
+                          className="w-full h-full flex items-center justify-center"
+                          style={{
+                            background: "rgba(255,255,255,0.15)",
+                          }}
+                        >
+                          <span
+                            className="text-xl font-bold"
+                            style={{
+                              color: "white",
+                              textShadow: "0px 1px 2px rgba(0,0,0,0.3)",
+                            }}
+                          >
+                            {category.charAt(0)}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <span
+                      className="text-xs text-center truncate w-16"
+                      style={{ color: colors.text }}
+                    >
+                      {category}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showFullStories && transformedStories && (
+        <div ref={storiesContainerRef} className="fixed inset-0 z-50 bg-black">
+          <button
+            className="absolute top-4 right-4 z-50 text-white text-lg font-bold"
+            onClick={handleCloseFullStories}
+          >
+            ✕
+          </button>
+          <ReactInstaStories
+            stories={transformedStories}
+            defaultInterval={5000}
+            width="100vw"
+            height="100vh"
+            currentIndex={currentStoryIndex}
+            onAllStoriesEnd={handleCloseFullStories}
+          />
+          <button
+            className="absolute bottom-6 right-6 z-[9999] bg-white bg-opacity-20 backdrop-blur-sm hover:bg-opacity-30 rounded-full p-3 shadow-lg transition-all"
+            onClick={handleCloseFullStories}
+            aria-label="Close stories"
+          >
+            <X size={28} color="black" strokeWidth={2.5} />
+          </button>
+        </div>
+      )}
 
       <main className="flex-grow">
         {loading ? (

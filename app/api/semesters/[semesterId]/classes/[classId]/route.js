@@ -33,6 +33,17 @@ export async function GET(request, { params }) {
     const classPath = path.join(semesterPath, classId);
     const files = await fs.readdir(classPath);
 
+    // Try to read stories.json if it exists
+    let stories = null;
+    try {
+      const storiesPath = path.join(classPath, "stories.json");
+      const storiesContent = await fs.readFile(storiesPath, "utf-8");
+      stories = JSON.parse(storiesContent);
+    } catch (error) {
+      // stories.json doesn't exist or is invalid, which is fine
+      console.log("No stories found for this class");
+    }
+
     return NextResponse.json({
       semester: {
         id: semesterId,
@@ -47,6 +58,7 @@ export async function GET(request, { params }) {
       hasVocabulary: classItem.hasVocabulary,
       hasAlternativeMaterial: classItem.hasAlternativeMaterial,
       hasQuiz: classItem.hasQuiz,
+      stories: stories,
     });
   } catch (error) {
     console.error("Error fetching class details:", error);

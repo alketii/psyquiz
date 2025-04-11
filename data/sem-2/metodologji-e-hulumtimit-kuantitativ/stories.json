@@ -1,0 +1,702 @@
+[
+  {
+    "header": {
+      "heading": "Hulumtimi",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hulumtim",
+      "text": "Kërkim i njohurive dhe studim sistematik i një trendi apo ngjarje që përfshin mbledhjen, prezantimin, analizimin dhe interpretimin e të dhënave kuantitative.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hulumtimi",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Popullatë e hulumtimit",
+      "text": "Përfshirje e të gjithë individëve me karakteristika të cilat synohen të studiohen.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hulumtimi",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostër",
+      "text": "Koleksion më i vogël i njësive nga një popullatë e hulumtimit që shfrytëzohet për të përcaktuar të vërtetën për atë popullatë.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hulumtimi",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Të dhëna primare",
+      "text": "Të dhëna të cilat mblidhen për herë të parë gjatë realizimit të hulumtimit për qëllim të projektit hulumtues.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hulumtimi",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Të dhëna sekondare",
+      "text": "Të dhëna të cilat janë mbledhur nga dikush tjetër për ndonjë qëllim tjetër, por shfrytëzohen për realizimin e projektit hulumtues.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hipotezë",
+      "text": "Supozim punues për gjetjet e mundshme të hulumtimit, që shpjegon ndërlidhjen e pritur në mes të dy apo më shumë variablave.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hipoteza zero (H0)",
+      "text": "Pretendimi se nuk ka ndërlidhje mes variablave.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hipoteza alternative (H1)",
+      "text": "Pretendimi se ekziston ndërlidhje mes variablave.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hipoteza me kahje të caktuar",
+      "text": "Parashikohet drejtimi i ndërlidhjes (pozitiv/negativ).",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hipoteza pa kahje të caktuar",
+      "text": "Nuk parashikohet drejtimi i ndërlidhjes.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hipoteza shkakore",
+      "text": "Parashikohet ndikimi i variablës së pavarur në atë të varur.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hipoteza jo-shkakore",
+      "text": "Parashikohet ndërlidhje pa marrëdhënie shkakore.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Konstrukt",
+      "text": "Koncept i operacionalizuar në terma të matshëm për të zvogëluar variacionin e të kuptuarit të konceptit të caktuar.",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Variabël",
+      "text": "Çfarëdo karakteristike e cilë ndryshon dhe mund të ketë më shumë se një vlerë, si mosha, inteligjenca, motivimi, etj.",
+      "background": "#C8E6C9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Operacionalizim",
+      "text": "Procesi i konvertimit të koncepteve në variabla të matshme, duke përfshirë definimin e konstruktit, identifikimin e indikatorëve dhe konvertimin e tyre në variabla.",
+      "background": "#B2EBF2"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Hipoteza, Konstruktet dhe Variablat",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Ajteme",
+      "text": "(Items) Njësitë përbërëse e mjetit matës, të cilat mund të jenë në formë të pyetjeve, deklaratave, detyrave apo problematikave.",
+      "background": "#BBDEFB"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Variablave",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Variabla e pavarur",
+      "text": "Variabla e presupozuar për të ndikuar në variablën e varur.",
+      "background": "#D1C4E9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Variablave",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Variabla e varur",
+      "text": "Variabla e presupozuar për t'u ndikuar nga variabla e pavarur.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Variablave",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Variabla kontrolluese",
+      "text": "Nuk lejohet të ndryshoje në mënyrë të paparishikueshme gjatë eksperimentit.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Variablave",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Variabla konstante",
+      "text": "Mbahet konstant gjatë eksperimentit.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Variablave",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Variabla organizmike",
+      "text": "Karakteristika natyrore si mosha, gjinia, gjatësia, pesha, etj.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Nivelet dhe Llojet e Matjes",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/103"
+    },
+    "content": {
+      "type": "text",
+      "title": "Nivelet e matjes",
+      "text": "Nominale: Përfshinë vetëm kategoritë e variablës (p.sh., gjinia). Ordinale: Përfshinë kategoritë e ranguara të variablës (p.sh., niveli i shkollimit). Intervale: Përfshinë dallimet e njëjta në mes vlerave ranguese të variablës, por pa pikë fillestare natyrale (p.sh., temperatura në °C). Proporcionale: Përfshinë dallimet e njëjta në mes të vlerave ranguese dhe pikën fillestare natyrale (p.sh., mosha).",
+      "background": "#4D9DFF"
+    },
+    "duration": 8000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra e rastësishme e thjeshtë",
+      "text": "Secili pjesëtar i popullatës së hulumtimit ka gjasa të barabarta për t'u përzgjedhur në mostër.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra e sistematike",
+      "text": "Përzgjedhja e mostrës duke filluar nga një pikënisje e rastësishme dhe vazhdohet me përzgjedhje në bazë të intervaleve periodike të fiksuara.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra e stratifikuar",
+      "text": "Ndarja e popullatës në grupe homogjene dhe përzgjedhja e pjesëmarrësve në mënyrë proporcionale me përqindjen e tyre në popullatë.",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra e kuotave",
+      "text": "Përzgjedhja jo e rastësishme e një numri ose proporcioni të paracaktuar njësish, të quajtura kuota.",
+      "background": "#C8E6C9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra e konvenueshme",
+      "text": "Përzgjedhja e individëve më lehtë të qasshëm, si miqtë, fqinjët dhe kalimtarët e rastit.",
+      "background": "#B2EBF2"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra vullnetare",
+      "text": "Përfshin anëtarët e popullatës që e përzgjedhin vetveten për mostër.",
+      "background": "#BBDEFB"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra e \"topit/ortekut të dëborës\"",
+      "text": "Përzgjedhja e subjekteve specifike që referojnë persona me specifika të njëjta.",
+      "background": "#D1C4E9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra e qëllimshme",
+      "text": "Teknikë e përzgjedhjes së mostrës ku hulumtuesi mbështetet në gjykimin e tij/saj për karakteristikat e caktuara.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra multifazore",
+      "text": "Përzgjedhja e kategorive të popullatës në fazën e parë dhe pjesëmarrësve në fazën e dytë, në mënyrë të rastësishme.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra e grumbujve (klaster)",
+      "text": "Përzgjedhja në bazë të zonave gjeografike, pastaj pjesëmarrësve nga ato zona.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përzgjedhja e Mostrës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mostra disproporcionale",
+      "text": "Mbipërzgjedhje nga strata të vogla për qëllime statistikore.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Mjetet Matëse dhe Reliabiliteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mjetet matëse",
+      "text": "Pyetsorë, shkallë matjeje, inventarë dhe teste të standardizuara që përdoren për të matur konstrukte të caktuara.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Mjetet Matëse dhe Reliabiliteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Ajtemet njëdimensionale",
+      "text": "Matin një koncept të vetëm me ndërlidhje të lartë mes tyre.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Mjetet Matëse dhe Reliabiliteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Ajtemet shumëdimensionale",
+      "text": "Matin konstrukte të ndërlikuara të ndara në disa dimensione.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Mjetet Matëse dhe Reliabiliteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Testet e standardizuara",
+      "text": "Teste me normat statistikore që ofrojnë të dhëna të krahasueshme dhe interpretuese.",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Mjetet Matëse dhe Reliabiliteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Reliabilitet",
+      "text": "Cilësia e të qënurit i besueshëm dhe konsistent, që vlerëson konsistencën e ajtemeve brenda mjetit matës dhe në kohë të ndryshme.",
+      "background": "#C8E6C9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Mjetet Matëse dhe Reliabiliteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Reliabilitet i brendshëm",
+      "text": "Konsistenca e ajtemeve brenda mjetit matës, që tregon nëse të gjitha ajtemet në mjetin matës masin konceptin e caktuar.",
+      "background": "#B2EBF2"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Mjetet Matëse dhe Reliabiliteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Reliabilitet në kohë të ndryshme",
+      "text": "Konsistenca e mjetit matës në kohë të ndryshme, që tregon nëse shkallët e matjes masin konceptin e caktuar në kohë të ndryshme.",
+      "background": "#BBDEFB"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Validiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Validitet",
+      "text": "Vlefshmëri/bazueshmëri që ka të bëjë me evidencën që shkalla e matjes matë atë çfarë ka qëllim të matë.",
+      "background": "#D1C4E9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Validiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Validiteti i dukjes",
+      "text": "Kontrollimi i secilit ajtem se a matë konstruktin e caktuar nga pamja e ajtemeve.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Validiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Validiteti përmbajtësor",
+      "text": "Kontrollimi i mjetit matës se a i përfshinë të gjitha karakteristikat e rëndësishme të konstruktit të caktuar.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Validiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Validiteti konkurues",
+      "text": "Verifikimi i mjetit matës se a korrelojnë të dhënat e mbledhura me mjete të tjera të matjes që matin konstruktin e njëjtë.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Validiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Validiteti i grupeve të njohura",
+      "text": "Verifikimi se shkalla e matjes a jep rezultate të ndryshme për grupet që parashikhen të kenë dallime në rezultat.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Validiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Validiteti parashikues",
+      "text": "Verifikimi se a parashikon mjeti matës në mënyrë të duhur sjelljet në të ardhmen.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Validiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Validiteti diskriminues (dallues)",
+      "text": "Verifikimi i mjetit matës se a jep rezultate të ndryshme në krahasim me rezultatet e një mjeti matës që mat konstrukt tjetër.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Shqyrtimi i literaturës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/107"
+    },
+    "content": {
+      "type": "text",
+      "title": "Shqyrtimi i literaturës",
+      "text": "Procesi i analizimit të studimeve ekzistuese për të ndërtuar bazën teorike të hulumtimit, gjeneruar ide dhe përcaktuar çfarë duhet eksploruar më tej.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Shqyrtimi i literaturës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/107"
+    },
+    "content": {
+      "type": "text",
+      "title": "Burimet online të literaturës",
+      "text": "Bazat si PsychInfo, Web of Science, Scopus, RefWorks, EndNote.",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Shqyrtimi i literaturës",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/107"
+    },
+    "content": {
+      "type": "text",
+      "title": "Qëllimi i hulumtimit",
+      "text": "Shprehja e qartë e asaj që synohet të arrihet përmes hulumtimit dhe kontributi i tij në fushën përkatëse.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  }
+]

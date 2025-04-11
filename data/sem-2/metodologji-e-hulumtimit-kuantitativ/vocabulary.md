@@ -72,9 +72,9 @@ Karakteristika natyrore si mosha, gjinia, gjatësia, pesha, etj.
 
 22. **Nivelet e matjes**  
 - **Nominale**: Përfshinë vetëm kategoritë e variablës (p.sh., gjinia).  
-    - **Ordinale**: Përfshinë kategoritë e ranguara të variablës (p.sh., niveli i shkollimit).  
-    - **Intervale**: Përfshinë dallimet e njëjta në mes vlerave ranguese të variablës, por pa pikë fillestare natyrale (p.sh., temperatura në °C).  
-    - **Proporcionale**: Përfshinë dallimet e njëjta në mes të vlerave ranguese dhe pikën fillestare natyrale (p.sh., mosha).
+- **Ordinale**: Përfshinë kategoritë e ranguara të variablës (p.sh., niveli i shkollimit).  
+- **Intervale**: Përfshinë dallimet e njëjta në mes vlerave ranguese të variablës, por pa pikë fillestare natyrale (p.sh., temperatura në °C).  
+- **Proporcionale**: Përfshinë dallimet e njëjta në mes të vlerave ranguese dhe pikën fillestare natyrale (p.sh., mosha).
 
 ## 5. Përzgjedhja e Mostrës
 
