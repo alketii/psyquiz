@@ -24,7 +24,7 @@
           "hasMainMaterial": true,
           "hasVocabulary": true,
           "hasAlternativeMaterial": true,
-          "hasQuiz": false
+          "hasQuiz": true
         },
         {
           "id": "metodologji-e-hulumtimit-kuantitativ",

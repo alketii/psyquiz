@@ -7,6 +7,7 @@ import Header from "../../../../components/Header";
 import Footer from "../../../../components/Footer";
 import { FileText, BookOpen, BookMarked, Trophy, X } from "lucide-react";
 import ReactInstaStories from "react-insta-stories";
+import Head from "next/head";
 
 // Define a set of complementary color schemes
 const COLOR_SCHEMES = [
@@ -95,8 +96,26 @@ export default function ClassPage() {
   const storiesContainerRef = useRef(null);
   const touchStartY = useRef(0);
   const [categoryColorMap, setCategoryColorMap] = useState({});
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isIOS, setIsIOS] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Detect iOS devices
+    const checkIsIOS = () => {
+      const userAgent = window.navigator.userAgent.toLowerCase();
+      return /iphone|ipad|ipod/.test(userAgent);
+    };
+    setIsIOS(checkIsIOS());
+
+    // Detect mobile and iOS
+    const checkDevice = () => {
+      const userAgent = window.navigator.userAgent.toLowerCase();
+      setIsMobile(/iphone|ipad|ipod|android|mobile/.test(userAgent));
+    };
+
+    checkDevice();
+
     async function fetchClassData() {
       try {
         const response = await fetch(
@@ -169,6 +188,87 @@ export default function ClassPage() {
       };
     }
   }, [showFullStories]);
+
+  // Handle fullscreen mode with keyboard listener for ESC key
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape" && showFullStories) {
+        setShowFullStories(false);
+      }
+    };
+
+    // Block scroll when stories are open
+    if (showFullStories) {
+      document.body.style.overflow = "hidden";
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [showFullStories]);
+
+  // When stories are opened, simulate immersive mode by adding classes
+  useEffect(() => {
+    if (showFullStories) {
+      // Add class to body to prevent scrolling
+      document.body.classList.add(
+        "overflow-hidden",
+        "fixed",
+        "inset-0",
+        "w-full",
+        "h-full"
+      );
+
+      // For iOS Safari, use additional meta tags
+      if (isMobile) {
+        // Find existing viewport meta tag or create a new one
+        let viewportMeta = document.querySelector('meta[name="viewport"]');
+        const originalContent = viewportMeta ? viewportMeta.content : "";
+
+        if (!viewportMeta) {
+          viewportMeta = document.createElement("meta");
+          viewportMeta.name = "viewport";
+          document.head.appendChild(viewportMeta);
+        }
+
+        // Set fullscreen-friendly content
+        viewportMeta.content =
+          "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover";
+
+        // Store reference to restore it later
+        return () => {
+          if (originalContent) {
+            viewportMeta.content = originalContent;
+          } else {
+            try {
+              document.head.removeChild(viewportMeta);
+            } catch (e) {
+              console.log("Error removing meta tag:", e);
+            }
+          }
+          document.body.classList.remove(
+            "overflow-hidden",
+            "fixed",
+            "inset-0",
+            "w-full",
+            "h-full"
+          );
+        };
+      }
+
+      return () => {
+        document.body.classList.remove(
+          "overflow-hidden",
+          "fixed",
+          "inset-0",
+          "w-full",
+          "h-full"
+        );
+      };
+    }
+  }, [showFullStories, isMobile]);
 
   // Get unique categories from stories
   const getUniqueCategories = () => {
@@ -400,28 +500,56 @@ export default function ClassPage() {
       )}
 
       {showFullStories && transformedStories && (
-        <div ref={storiesContainerRef} className="fixed inset-0 z-50 bg-black">
+        <div
+          ref={storiesContainerRef}
+          className="stories-fullscreen fixed inset-0 bg-black"
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 9999,
+            margin: 0,
+            padding: 0,
+            backgroundColor: "#000",
+            // iOS Safari specific styling
+            WebkitOverflowScrolling: "touch",
+            WebkitBackfaceVisibility: "hidden",
+            WebkitTapHighlightColor: "transparent",
+          }}
+        >
           <button
-            className="absolute top-4 right-4 z-50 text-white text-lg font-bold"
+            className="absolute top-6 right-6 z-[9999] p-3 rounded-full bg-black bg-opacity-50 shadow-lg"
             onClick={handleCloseFullStories}
+            style={{
+              WebkitTapHighlightColor: "transparent",
+            }}
           >
-            ✕
+            <X size={24} color="white" strokeWidth={2.5} />
           </button>
-          <ReactInstaStories
-            stories={transformedStories}
-            defaultInterval={5000}
-            width="100vw"
-            height="100vh"
-            currentIndex={currentStoryIndex}
-            onAllStoriesEnd={handleCloseFullStories}
-          />
-          <button
-            className="absolute bottom-6 right-6 z-[9999] bg-white bg-opacity-20 backdrop-blur-sm hover:bg-opacity-30 rounded-full p-3 shadow-lg transition-all"
-            onClick={handleCloseFullStories}
-            aria-label="Close stories"
-          >
-            <X size={28} color="black" strokeWidth={2.5} />
-          </button>
+
+          <div className="w-full h-full">
+            <ReactInstaStories
+              stories={transformedStories}
+              defaultInterval={5000}
+              width="100%"
+              height="100%"
+              currentIndex={currentStoryIndex}
+              onAllStoriesEnd={handleCloseFullStories}
+              storyStyles={{
+                width: "100%",
+                height: "100%",
+                maxHeight: "100%",
+                maxWidth: "100%",
+                objectFit: "contain",
+                margin: 0,
+                padding: 0,
+              }}
+            />
+          </div>
         </div>
       )}
 

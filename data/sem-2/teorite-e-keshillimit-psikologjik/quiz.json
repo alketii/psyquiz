@@ -1,0 +1,634 @@
+[
+  {
+    "question": "Çfarë është Këshillimi?",
+    "answers": [
+      "Një proces ndërveprues që ndihmon klientin të ndryshojë sjelljet, aftësitë dhe vendimmarrjen.",
+      "Një metodë mjekësore kirurgjikale për trajtimin e çrregullimeve mendore.",
+      "Vetëm një seri testesh psikologjike pa ndërveprim me klientin."
+    ]
+  },
+  {
+    "question": "Çfarë është Psikoterapia?",
+    "answers": [
+      "Një trajtim psikologjik që përdor ndërveprimin verbal dhe teknikat klinike për të lehtësuar vështirësitë emocionale.",
+      "Një procedurë për matjen e valëve të trurit me MRI.",
+      "Një analizë statistikore e të dhënave të shëndetit publik."
+    ]
+  },
+  {
+    "question": "Kush krijoi psikoanalizën?",
+    "answers": [
+      "Sigmund Freud",
+      "Carl Jung",
+      "Carl Rogers"
+    ]
+  },
+  {
+    "question": "Cila qasje terapike fokusohet në aspektet e pavetëdijshme dhe të vetëdijshme të mendjes?",
+    "answers": [
+      "Terapia psikodinamike",
+      "Terapia humaniste",
+      "Terapia Kognitive‑Biheviorale"
+    ]
+  },
+  {
+    "question": "Në cilin vit u botua Manuali i parë DSM?",
+    "answers": [
+      "1952",
+      "1942",
+      "1962"
+    ]
+  },
+  {
+    "question": "Cili institucion u themelua në vitin 1892?",
+    "answers": [
+      "APA (American Psychological Association)",
+      "BPS (British Psychological Society)",
+      "WHO (World Health Organization)"
+    ]
+  },
+  {
+    "question": "Cila praktikë historike përdorte magnete për të lehtësuar shqetësimin?",
+    "answers": [
+      "Mesmerizëm",
+      "Frenologji",
+      "Lobotomi"
+    ]
+  },
+  {
+    "question": "Cila praktikë historike studion formën e kafkës?",
+    "answers": [
+      "Frenologji",
+      "Mesmerizëm",
+      "Psikoanalizë"
+    ]
+  },
+  {
+    "question": "Cila procedurë kirurgjikale u krye për herë të parë në 1936 për arsye të shëndetit mendor?",
+    "answers": [
+      "Lobotomi",
+      "Elektro‑shok terapik (ECT)",
+      "Deep brain stimulation"
+    ]
+  },
+  {
+    "question": "Çfarë është Empatia si aftësi bazë e këshillëdhënësit?",
+    "answers": [
+      "Të kuptosh si ndihen të tjerët.",
+      "Të jesh gjithmonë kritik ndaj klientit.",
+      "Të analizosh ëndrrat e klientit pa komunikim."
+    ]
+  },
+  {
+    "question": "Cili është roli kryesor i këshillëdhënësit?",
+    "answers": [
+      "Të krijojë hapësirë për eksplorim dhe vendim‑marrje për klientin.",
+      "Të japë receta mjekësore për klientin.",
+      "Të marrë vendime ligjore në emër të klientit."
+    ]
+  },
+  {
+    "question": "Çfarë nënkupton 'Heshtja' si barrierë komunikimi?",
+    "answers": [
+      "Klienti nuk flet për një kohë të gjatë gjatë seancës.",
+      "Këshilluesi flet pa pushim duke dominuar bisedën.",
+      "Klienti qesh me zë të lartë në çdo përgjigje."
+    ]
+  },
+  {
+    "question": "Cili libër i Sigmund Freud-it u botua në vitin 1900?",
+    "answers": [
+      "\"Një interpretim i ëndrrave\"",
+      "\"Psikopatologjia e jetës së përditshme\"",
+      "\"Ego dhe Id\""
+    ]
+  },
+  {
+    "question": "Cili term përshkruan ngatërrimin emocional të roleve mes këshilluesit dhe klientit?",
+    "answers": [
+      "Kontratransfer",
+      "Transfer",
+      "Supervizim"
+    ]
+  },
+  {
+    "question": "Çfarë përshkruan roli i 'Supervizorit' në procesin e këshillimit?",
+    "answers": [
+      "Mbështet dhe udhëzon këshillëdhënësin fillestar.",
+      "Monitoron sjelljen e klientit gjatë gjithë jetës së tij.",
+      "Vendos diagnozën psikiatrike për klientin."
+    ]
+  },
+  {
+    "question": "Çfarë është Terapia Jungiane?",
+    "answers": [
+      "Formë terapie që eksploron simbolet, ëndrrat dhe procesin e individuimit sipas Carl Jung.",
+      "Vendosja e kufijve për të menaxhuar kërkesat e tepërta.",
+      "Figura kryesore e psikologjisë humaniste, botoi “Për t’u bërë person…” në 1961."
+    ]
+  },
+  {
+    "question": "Çfarë është Terapia Kognitive‑Biheviorale (CBT)?",
+    "answers": [
+      "Qasje që fokusohet në ndryshimin e mendimeve dhe sjelljeve problematike përmes teknikave të strukturuara.",
+      "Rritja e vetëdijes së klientit për veten dhe problemet e tij.",
+      "Interpretimi dhe menaxhimi i heshtjes së klientit."
+    ]
+  },
+  {
+    "question": "Çfarë është Psikologjia humaniste?",
+    "answers": [
+      "Qasje e përqendruar te klienti që thekson potencialin njerëzor dhe marrëdhënien terapeutike.",
+      "Përbëhet nga Hyrja, Intervista dhe Përmbledhja.",
+      "Sfida e këshillëdhënësit fillestar për të përballuar pasiguritë personale."
+    ]
+  },
+  {
+    "question": "Çfarë është Standardet etike të APA 1953?",
+    "answers": [
+      "Udhëzuesi i parë formal i etikës për psikoterapistët, publikuar nga APA.",
+      "Faza ku këshillëdhënësi prezenton veten, shpjegon procesin dhe vendos raport besimi.",
+      "Në 1973, homoseksualiteti u hoq nga DSM si gjendje e shëndetit mendor."
+    ]
+  },
+  {
+    "question": "Çfarë është Përshtatshmëri?",
+    "answers": [
+      "Të jesh i qëndrueshëm dhe i parashikueshëm në sjellje gjatë këshillimit.",
+      "Disiplinë mjekësore që trajton çrregullimet mendore me ndërhyrje biologjike dhe psikoterapi.",
+      "Heshtja e këshillëdhënësit që mund të shkaktojë ankth te klienti."
+    ]
+  },
+  {
+    "question": "Çfarë është Sjellje e pakushtëzuar pozitive?",
+    "answers": [
+      "Pranim pa gjykim i klientit nga këshillëdhënësi.",
+      "Ushtrimi i frikës ose fajit që mund të rrisë rezistencën e klientit.",
+      "Interpretimi dhe menaxhimi i heshtjes së klientit."
+    ]
+  },
+  {
+    "question": "Çfarë është Respekti?",
+    "answers": [
+      "Lejimi i klientit të shprehet lirisht dhe vlerësimi i dinjitetit të tij.",
+      "Mbajtja e bisedës sipërfaqësore që nuk është këshilluese.",
+      "Ofrohet në distancë duke përdorur komunikimin telefonik."
+    ]
+  },
+  {
+    "question": "Çfarë është Fshehtësia?",
+    "answers": [
+      "Ruajtja e konfidencialitetit të informacionit të klientit.",
+      "Bërja e shumë pyetjeve që zvogëlojnë vetë‑zbulimin e klientit.",
+      "Fokusimi te arsyetimi logjik që ul efikasitetin emocional të procesit."
+    ]
+  },
+  {
+    "question": "Çfarë është Përgjegjësia?",
+    "answers": [
+      "Informimi i klientit për hapat dhe vendimet gjatë procesit.",
+      "Mbajtja e bisedës sipërfaqësore që nuk është këshilluese.",
+      "Sfida e këshillëdhënësit fillestar për të përballuar pasiguritë personale."
+    ]
+  },
+  {
+    "question": "Çfarë është Ndershmëria?",
+    "answers": [
+      "Sigurimi i informacionit të saktë dhe vendimeve të lira për klientin.",
+      "Përbëhet nga Hyrja, Intervista dhe Përmbledhja.",
+      "Informimi i klientit për hapat dhe vendimet gjatë procesit."
+    ]
+  },
+  {
+    "question": "Çfarë është Të kuptuarit?",
+    "answers": [
+      "Vlerësimi i ndryshimeve individuale dhe kontekstit të klientit.",
+      "Seanca me disa klientë njëkohësisht nën drejtimin e një këshilluesi.",
+      "Udhëzuesi i parë formal i etikës për psikoterapistët, publikuar nga APA."
+    ]
+  },
+  {
+    "question": "Çfarë është Afrimiteti?",
+    "answers": [
+      "Tregimi i ngrohtësisë dhe mbështetjes ndaj nevojave të klientit.",
+      "Interpretimi dhe menaxhimi i heshtjes së klientit.",
+      "Në 1973, homoseksualiteti u hoq nga DSM si gjendje e shëndetit mendor."
+    ]
+  },
+  {
+    "question": "Çfarë është Efektshmëria?",
+    "answers": [
+      "Aftësia për të punuar mirë nën presion dhe për të arritur rezultate.",
+      "Përbëhet nga Hyrja, Intervista dhe Përmbledhja.",
+      "Seanca një‑më‑një ndërmjet këshilluesit dhe një klienti."
+    ]
+  },
+  {
+    "question": "Çfarë është Elasticiteti?",
+    "answers": [
+      "Të jesh i hapur ndaj reagimeve të papritura dhe të përshtatesh.",
+      "Parandalimi i mbingarkesës emocionale duke ruajtur kufijtë.",
+      "Sfida e këshillëdhënësit fillestar për të përballuar pasiguritë personale."
+    ]
+  },
+  {
+    "question": "Çfarë është Pasiviteti?",
+    "answers": [
+      "Heshtja e këshillëdhënësit që mund të shkaktojë ankth te klienti.",
+      "Qëndrimi në ‘periudhën e mjaltit’ pa hyrë në thelb të problemit.",
+      "Proces i zgjatur për zhvillim personal të thelluar."
+    ]
+  },
+  {
+    "question": "Çfarë është Dominim i këshillëdhënësit?",
+    "answers": [
+      "Këshillëdhënësi ndërpret dhe jep leksione, duke dominuar bisedën.",
+      "Vetëm një takim i vetëm për të adresuar një çështje të veçantë.",
+      "Seanca me disa klientë njëkohësisht nën drejtimin e një këshilluesi."
+    ]
+  },
+  {
+    "question": "Çfarë është Pyetje të tepruara?",
+    "answers": [
+      "Bërja e shumë pyetjeve që zvogëlojnë vetë‑zbulimin e klientit.",
+      "Qëndrimi në ‘periudhën e mjaltit’ pa hyrë në thelb të problemit.",
+      "Sigurimi i informacionit të saktë dhe vendimeve të lira për klientin."
+    ]
+  },
+  {
+    "question": "Çfarë është Ndalim i të qamurit?",
+    "answers": [
+      "Këshillëdhënësi pengon klientin të shprehë emocione duke mos lejuar të qajë.",
+      "Fjalor teknik që krijon konfuzitet te klienti.",
+      "Kundërshtimi i klientit që injoron ndjenjat e tij."
+    ]
+  },
+  {
+    "question": "Çfarë është Insistim në interaksion social?",
+    "answers": [
+      "Mbajtja e bisedës sipërfaqësore që nuk është këshilluese.",
+      "Informimi i klientit për hapat dhe vendimet gjatë procesit.",
+      "Faza ku identifikohen prioritetet dhe mbështetjet dhe inkurajohet përgjegjësia e klientit."
+    ]
+  },
+  {
+    "question": "Çfarë është Sjellje e mirë e tepruar?",
+    "answers": [
+      "Qëndrimi në ‘periudhën e mjaltit’ pa hyrë në thelb të problemit.",
+      "Nevoja e këshillëdhënësit për natyralitet kundrejt rolit profesional.",
+      "Përbëhet nga Hyrja, Intervista dhe Përmbledhja."
+    ]
+  },
+  {
+    "question": "Çfarë është Intelektualizmi?",
+    "answers": [
+      "Fokusimi te arsyetimi logjik që ul efikasitetin emocional të procesit.",
+      "Hapi klinikën e parë psikologjike në 1896.",
+      "Sigurimi i informacionit të saktë dhe vendimeve të lira për klientin."
+    ]
+  },
+  {
+    "question": "Çfarë është Përdorimi i zhargonit profesional?",
+    "answers": [
+      "Fjalor teknik që krijon konfuzitet te klienti.",
+      "Ruajtja e konfidencialitetit të informacionit të klientit.",
+      "Rritja e vetëdijes së klientit për veten dhe problemet e tij."
+    ]
+  },
+  {
+    "question": "Çfarë është Nënvlerësimi?",
+    "answers": [
+      "Tregon mungesë respekti duke minimizuar ndjenjat e klientit.",
+      "Sigurimi i informacionit të saktë dhe vendimeve të lira për klientin.",
+      "Sfida e këshillëdhënësit fillestar për të përballuar pasiguritë personale."
+    ]
+  },
+  {
+    "question": "Çfarë është Argumentimi?",
+    "answers": [
+      "Kundërshtimi i klientit që injoron ndjenjat e tij.",
+      "Përbëhet nga Hyrja, Intervista dhe Përmbledhja.",
+      "Figura kryesore e psikologjisë humaniste, botoi “Për t’u bërë person…” në 1961."
+    ]
+  },
+  {
+    "question": "Çfarë është Presioni?",
+    "answers": [
+      "Ushtrimi i frikës ose fajit që mund të rrisë rezistencën e klientit.",
+      "Mori doktoraturën e parë në psikologji në 1886 në Universitetin Johns Hopkins.",
+      "Aftësia për të punuar mirë nën presion dhe për të arritur rezultate."
+    ]
+  },
+  {
+    "question": "Çfarë është Struktura e procesit të këshillimit?",
+    "answers": [
+      "Përbëhet nga Hyrja, Intervista dhe Përmbledhja.",
+      "Pranimi i mungesës së rezultateve të menjëhershme në proces.",
+      "Qëndrimi në ‘periudhën e mjaltit’ pa hyrë në thelb të problemit."
+    ]
+  },
+  {
+    "question": "Çfarë është Hyrja (në këshillim)?",
+    "answers": [
+      "Faza ku këshillëdhënësi prezenton veten, shpjegon procesin dhe vendos raport besimi.",
+      "Fusha që studion sistemin nervor dhe lidhjen e tij me sjelljen.",
+      "Qasje që fokusohet në ndryshimin e mendimeve dhe sjelljeve problematike përmes teknikave të strukturuara."
+    ]
+  },
+  {
+    "question": "Çfarë është Intervista (në këshillim)?",
+    "answers": [
+      "Faza ku identifikohen prioritetet dhe mbështetjet dhe inkurajohet përgjegjësia e klientit.",
+      "Zgjedhja e stilit personal si mik, udhëzues, etj.",
+      "Disiplinë mjekësore që trajton çrregullimet mendore me ndërhyrje biologjike dhe psikoterapi."
+    ]
+  },
+  {
+    "question": "Çfarë është Përmbledhja (në këshillim)?",
+    "answers": [
+      "Rishikimi i seancës, planifikimi i hapave të ardhshëm dhe mbyllja.",
+      "Aftësia për të punuar mirë nën presion dhe për të arritur rezultate.",
+      "Pranimi i mungesës së rezultateve të menjëhershme në proces."
+    ]
+  },
+  {
+    "question": "Çfarë është Këshillim individual?",
+    "answers": [
+      "Seanca një‑më‑një ndërmjet këshilluesit dhe një klienti.",
+      "Hapi klinikën e parë psikologjike në 1896.",
+      "Informimi i klientit për hapat dhe vendimet gjatë procesit."
+    ]
+  },
+  {
+    "question": "Çfarë është Këshillim në grup?",
+    "answers": [
+      "Seanca me disa klientë njëkohësisht nën drejtimin e një këshilluesi.",
+      "Sigurimi i informacionit të saktë dhe vendimeve të lira për klientin.",
+      "Figura kryesore e psikologjisë humaniste, botoi “Për t’u bërë person…” në 1961."
+    ]
+  },
+  {
+    "question": "Çfarë është Këshillim përmes telefonit?",
+    "answers": [
+      "Ofrohet në distancë duke përdorur komunikimin telefonik.",
+      "Seanca me disa klientë njëkohësisht nën drejtimin e një këshilluesi.",
+      "Aftësia për të punuar mirë nën presion dhe për të arritur rezultate."
+    ]
+  },
+  {
+    "question": "Çfarë është Këshillim me një seancë të vetme?",
+    "answers": [
+      "Vetëm një takim i vetëm për të adresuar një çështje të veçantë.",
+      "Fusha që studion sistemin nervor dhe lidhjen e tij me sjelljen.",
+      "Qasje e përqendruar te klienti që thekson potencialin njerëzor dhe marrëdhënien terapeutike."
+    ]
+  },
+  {
+    "question": "Çfarë është Këshillim afatshkurtër?",
+    "answers": [
+      "Proces me kohëzgjatje të limituar dhe objektiva specifike.",
+      "Kundërshtimi i klientit që injoron ndjenjat e tij.",
+      "Qasje e përqendruar te klienti që thekson potencialin njerëzor dhe marrëdhënien terapeutike."
+    ]
+  },
+  {
+    "question": "Çfarë është Këshillim afatgjatë?",
+    "answers": [
+      "Proces i zgjatur për zhvillim personal të thelluar.",
+      "Vendosja e kufijve për të menaxhuar kërkesat e tepërta.",
+      "Figura kryesore e psikologjisë humaniste, botoi “Për t’u bërë person…” në 1961."
+    ]
+  },
+  {
+    "question": "Çfarë është Ndërgjegjësimi?",
+    "answers": [
+      "Rritja e vetëdijes së klientit për veten dhe problemet e tij.",
+      "Kundërshtimi i klientit që injoron ndjenjat e tij.",
+      "Qasje që fokusohet në ndryshimin e mendimeve dhe sjelljeve problematike përmes teknikave të strukturuara."
+    ]
+  },
+  {
+    "question": "Çfarë është Aftësimi për përballimin e problemit personal?",
+    "answers": [
+      "Mësimi i strategjive të vetë‑përballimit nga klienti.",
+      "Fjalor teknik që krijon konfuzitet te klienti.",
+      "Në 1973, homoseksualiteti u hoq nga DSM si gjendje e shëndetit mendor."
+    ]
+  },
+  {
+    "question": "Çfarë është Ballafaqim me mundimet e veta?",
+    "answers": [
+      "Sfida e këshillëdhënësit fillestar për të përballuar pasiguritë personale.",
+      "Këshillëdhënësi ndërpret dhe jep leksione, duke dominuar bisedën.",
+      "Zgjedhja e stilit personal si mik, udhëzues, etj."
+    ]
+  },
+  {
+    "question": "Çfarë është Si të jem ai/ajo që jam…?",
+    "answers": [
+      "Nevoja e këshillëdhënësit për natyralitet kundrejt rolit profesional.",
+      "Proces i zgjatur për zhvillim personal të thelluar.",
+      "Faza ku identifikohen prioritetet dhe mbështetjet dhe inkurajohet përgjegjësia e klientit."
+    ]
+  },
+  {
+    "question": "Çfarë është Largim nga perfekcionizmi?",
+    "answers": [
+      "Pranimi i gabimeve dhe i të panjohurave në praktikë.",
+      "Proces me kohëzgjatje të limituar dhe objektiva specifike.",
+      "Fusha që studion sistemin nervor dhe lidhjen e tij me sjelljen."
+    ]
+  },
+  {
+    "question": "Çfarë është Kuptimi i heshtjes (nga këshilluesi)?",
+    "answers": [
+      "Interpretimi dhe menaxhimi i heshtjes së klientit.",
+      "Në 1973, homoseksualiteti u hoq nga DSM si gjendje e shëndetit mendor.",
+      "Mësimi i strategjive të vetë‑përballimit nga klienti."
+    ]
+  },
+  {
+    "question": "Çfarë është Dalja në fund me kërkesat e klientit?",
+    "answers": [
+      "Vendosja e kufijve për të menaxhuar kërkesat e tepërta.",
+      "Të jesh i hapur ndaj reagimeve të papritura dhe të përshtatesh.",
+      "Mësimi i strategjive të vetë‑përballimit nga klienti."
+    ]
+  },
+  {
+    "question": "Çfarë është Durimi i mos sigurisë?",
+    "answers": [
+      "Pranimi i mungesës së rezultateve të menjëhershme në proces.",
+      "Hapi klinikën e parë psikologjike në 1896.",
+      "Tregimi i ngrohtësisë dhe mbështetjes ndaj nevojave të klientit."
+    ]
+  },
+  {
+    "question": "Çfarë është Si të mos e humbësh veten me klientët?",
+    "answers": [
+      "Parandalimi i mbingarkesës emocionale duke ruajtur kufijtë.",
+      "Qasje që fokusohet në ndryshimin e mendimeve dhe sjelljeve problematike përmes teknikave të strukturuara.",
+      "Figura kryesore e psikologjisë humaniste, botoi “Për t’u bërë person…” në 1961."
+    ]
+  },
+  {
+    "question": "Çfarë është Përcaktimi i rolit të këshillëdhënësit?",
+    "answers": [
+      "Zgjedhja e stilit personal si mik, udhëzues, etj.",
+      "Përbëhet nga Hyrja, Intervista dhe Përmbledhja.",
+      "Pranimi i gabimeve dhe i të panjohurave në praktikë."
+    ]
+  },
+  {
+    "question": "Çfarë është MRI?",
+    "answers": [
+      "Teknikë neuro‑imazherike që tregon komponentët kimikë në tru, përdoret në kërkim mbi depresionin dhe traumën.",
+      "Këshillëdhënësi ndërpret dhe jep leksione, duke dominuar bisedën.",
+      "Proces i zgjatur për zhvillim personal të thelluar."
+    ]
+  },
+  {
+    "question": "Çfarë është Neuroshkencë?",
+    "answers": [
+      "Fusha që studion sistemin nervor dhe lidhjen e tij me sjelljen.",
+      "Proces me kohëzgjatje të limituar dhe objektiva specifike.",
+      "Në 1973, homoseksualiteti u hoq nga DSM si gjendje e shëndetit mendor."
+    ]
+  },
+  {
+    "question": "Çfarë është Psikiatria?",
+    "answers": [
+      "Disiplinë mjekësore që trajton çrregullimet mendore me ndërhyrje biologjike dhe psikoterapi.",
+      "Proces i zgjatur për zhvillim personal të thelluar.",
+      "Ruajtja e konfidencialitetit të informacionit të klientit."
+    ]
+  },
+  {
+    "question": "Çfarë është Lightner Witmer?",
+    "answers": [
+      "Hapi klinikën e parë psikologjike në 1896.",
+      "Figura kryesore e psikologjisë humaniste, botoi “Për t’u bërë person…” në 1961.",
+      "Mori doktoraturën e parë në psikologji në 1886 në Universitetin Johns Hopkins."
+    ]
+  },
+  {
+    "question": "Çfarë është Joseph Jastrow?",
+    "answers": [
+      "Mori doktoraturën e parë në psikologji në 1886 në Universitetin Johns Hopkins.",
+      "Qasje që fokusohet në ndryshimin e mendimeve dhe sjelljeve problematike përmes teknikave të strukturuara.",
+      "Heshtja e këshillëdhënësit që mund të shkaktojë ankth te klienti."
+    ]
+  },
+  {
+    "question": "Çfarë është Margaret Washburn?",
+    "answers": [
+      "Gruaja e parë që fitoi doktoraturë në psikologji në 1894.",
+      "Qasje e përqendruar te klienti që thekson potencialin njerëzor dhe marrëdhënien terapeutike.",
+      "Rishikimi i seancës, planifikimi i hapave të ardhshëm dhe mbyllja."
+    ]
+  },
+  {
+    "question": "Çfarë është Carl Rogers?",
+    "answers": [
+      "Figura kryesore e psikologjisë humaniste, botoi “Për t’u bërë person…” në 1961.",
+      "Aftësia për të punuar mirë nën presion dhe për të arritur rezultate.",
+      "Vetëm një takim i vetëm për të adresuar një çështje të veçantë."
+    ]
+  },
+  {
+    "question": "Çfarë është Homoseksualiteti (heqja nga DSM)?",
+    "answers": [
+      "Në 1973, homoseksualiteti u hoq nga DSM si gjendje e shëndetit mendor.",
+      "Të jesh i hapur ndaj reagimeve të papritura dhe të përshtatesh.",
+      "Qasje e përqendruar te klienti që thekson potencialin njerëzor dhe marrëdhënien terapeutike."
+    ]
+  },
+  {
+    "question": "Çfarë është Psikoanalizë?",
+    "answers": [
+      "Qasje terapeutike e krijuar nga Sigmund Freud që analizon modelet, veprimet dhe emocionet e klientit përmes bisedës një‑më‑një.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është Terapia psikodinamike?",
+    "answers": [
+      "Qasje terapeutike që eksploron aspektet e pavetëdijshme dhe të vetëdijshme të mendjes njerëzore.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është Mesmerizëm?",
+    "answers": [
+      "Praktikë historike që përdor magnete për të lehtësuar shqetësimin.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është Frenologji?",
+    "answers": [
+      "Praktikë historike që studion formën e kafkës për të nxjerrë përfundime rreth personalitetit.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është Lobotomi?",
+    "answers": [
+      "Procedurë kirurgjikale historike ku prehen lidhjet e lobit frontal të trurit për trajtimin e çrregullimeve mendore.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është DSM?",
+    "answers": [
+      "Manual diagnostik dhe statistikor i çrregullimeve mendore që ofron kritere për diagnostikim klinik.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është APA?",
+    "answers": [
+      "Shoqatë profesionale amerikane për psikologët, themeluar më 1892.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është Sigmund Freud?",
+    "answers": [
+      "Neurolog austriak dhe themelues i psikoanalizës.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është \"Një interpretim i ëndrrave\"?",
+    "answers": [
+      "Libri i Sigmund Freud-it botuar më 1900 që prezanton teorinë e interpretimit të ëndrrave.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është Klienti fillon të qajë?",
+    "answers": [
+      "Reagim i klientit gjatë seancës që tregon shprehjen e lirë të emocioneve.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  },
+  {
+    "question": "Çfarë është Klienti refuzon ndihmën?",
+    "answers": [
+      "Reagim i klientit që refuzon mbështetjen gjatë seancës.",
+      "Një koncept i pavlefshëm në këtë fushë.",
+      "Një procedurë administrative pa rëndësi klinike."
+    ]
+  }
+]
