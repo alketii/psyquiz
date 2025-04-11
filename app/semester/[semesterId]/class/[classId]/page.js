@@ -296,7 +296,7 @@ export default function ClassPage() {
                   boxShadow: "0px 2px 4px rgba(0,0,0,0.2)",
                   fontWeight: "500",
                   lineHeight: "1.6",
-                  fontSize: "1.3em",
+                  fontSize: "1.1em",
                 }}
               >
                 {story.content.text}
@@ -386,7 +386,7 @@ export default function ClassPage() {
                       </div>
                     </div>
                     <span
-                      className="text-xs text-center truncate w-16"
+                      className="text-xs text-center w-16 break-words"
                       style={{ color: colors.text }}
                     >
                       {category}

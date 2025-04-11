@@ -1,0 +1,338 @@
+[
+  {
+    "header": {
+      "heading": "Kreativiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Kreativiteti",
+      "text": "Të krijosh do të thotë të sjellësh në ekzistencë ide ose gjëra të reja. Kreativiteti është diçka e re dhe e përshtatshme për detyrën.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Kreativiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Fazat Historike",
+      "text": "Para vitit 1950 – Krijimtaria lidhej me frymëzim hyjnor. Pas vitit 1950 – Themelimi i kërkimeve psikologjike për krijimtarinë pas fjalimit të Guilford.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Kreativiteti",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Vala e tretë e krijimtarisë",
+      "text": "Qasja sociokulturore, që filloi në vitet 1980–1990. Fokusohet në grupet kreative, kontekstet sociale dhe kulturore.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Dihotomitë për kreativitetin",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Individual dhe/ose social",
+      "text": "Individuale: Buron nga brenda individit, thekson mendjen njerëzore. Sociale: Rrjedh edhe nga kontekste shoqërore, materiale dhe natyrore.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Dihotomitë për kreativitetin",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Risi dhe/ose vlerë",
+      "text": "Kreativiteti përfshin si origjinalitetin ashtu edhe vlerën/përshtatshmërinë. Edhe imitim/traditë luan rol; nuk ka ide tërësisht të reja.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Dihotomitë për kreativitetin",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Ide dhe/ose veprim",
+      "text": "Fillon me ide në mendje, por kërkon veprim për ta realizuar.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Struktura themelore e kreativitetit",
+      "subheading": "Modelet e Kreativitetit",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Four P",
+      "text": "1. Personi – Çfarë lloj personi është krijues? 2. Produkti – Çfarë konsiderohet të jetë krijuese? 3. Procesi – Si të krijojmë? 4. Shtypja (mjedisi) – Si e formëson mjedisi krijimtarinë?",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Struktura themelore e kreativitetit",
+      "subheading": "Modelet e Kreativitetit",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Five A",
+      "text": "Propozuar nga Glăveanu (2013). Përfshin: 1. Aktorët 2. Audienca 3. Veprimet 4. Artifaktet 5. Përballjet. Njeh natyrën e dyfishtë të mjedisit (social dhe material).",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Nivelet e Kreativitetit",
+      "subheading": "Modelet e Kreativitetit",
+      "profileImage": "https://picsum.photos/100/103"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mini-C",
+      "text": "Interpretim i ri dhe personalisht kuptimplotë i përvojave, veprimeve, ngjarjeve, njohurive krijuese. Mini-C ndodh kur dikush ka një pasqyrë që është personale dhe e re për atë person.",
+      "background": "#C8E6C9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Nivelet e Kreativitetit",
+      "subheading": "Modelet e Kreativitetit",
+      "profileImage": "https://picsum.photos/100/103"
+    },
+    "content": {
+      "type": "text",
+      "title": "Pak-C",
+      "text": "Prodhimi i diçkaje të re dhe të dobishme. Kërkon aftësi specifike të fushës, tolerancën për paqartësi, marrjen e rrezikut, vetëdisiplinën dhe talent të specializuar.",
+      "background": "#B2EBF2"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Nivelet e Kreativitetit",
+      "subheading": "Modelet e Kreativitetit",
+      "profileImage": "https://picsum.photos/100/103"
+    },
+    "content": {
+      "type": "text",
+      "title": "Pro-C",
+      "text": "Arritje të jashtëzakonshme krijuese, aftësi për të punuar mbi probleme, projekte dhe ide që prekin fushën në tërësi. Është rezultat i një progresi zhvillimor të mundimshëm.",
+      "background": "#BBDEFB"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Nivelet e Kreativitetit",
+      "subheading": "Modelet e Kreativitetit",
+      "profileImage": "https://picsum.photos/100/103"
+    },
+    "content": {
+      "type": "text",
+      "title": "Big-C",
+      "text": "Kontribute krijuese të qarta dhe të shquara që zgjasin për një kohë të gjatë, madje edhe shekuj. Zakonisht është një dallim pas vdekjes dhe i rezervuar për pak elitën krijuese.",
+      "background": "#D1C4E9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Modelet e Kreativitetit",
+      "subheading": "Teoritë moderne",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Modeli APT",
+      "text": "Metaforë e parkut zbavitës për shprehjen krijuese. Fokusohet në katër aspekte: 1. Kërkesat fillestare, 2. Fushat tematike, 3. Sferat specifike, 4. Mikrosferat.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Modelet e Kreativitetit",
+      "subheading": "Teoritë moderne",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Katër G",
+      "text": "1. Fitimi (Gain) – për veten, përfitime të jashtme. 2. Rritja (Growth) – për veten, kënaqësi e brendshme. 3. Udhëzimi (Guidance) – për të tjerët, përvojë e brendshme. 4. Dhënia (Giving) – për të tjerët, motivim i jashtëm.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Modelet e Kreativitetit",
+      "subheading": "Teoritë moderne",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Modeli i Matricës",
+      "text": "Sugjeron katër lloje të krijimtarisë: 1. Krijimtaria e përgjegjshme, 2. Krijimtaria e pritshme, 3. Krijimtaria kontribuese, 4. Krijimtaria proaktive.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Proceset kognitive",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Njohja (Kognicioni)",
+      "text": "Njohja është përvetësimi dhe përpunimi i informacionit përmes mendimit, perceptimit dhe kujtesës.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Proceset kognitive",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Analogjia",
+      "text": "Lidhja e dy koncepteve që nuk janë të dukshme menjëherë, por kanë ngjashmëri të thella logjike dhe strukturore.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Proceset kognitive",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Efekti i konformitetit",
+      "text": "Njerëzit përshtatin mendimet dhe sjelljet e tyre për t'u përputhur me shumicën, shpesh duke zvogëluar kreativitetin.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Proceset kognitive",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Kujtesa punuese",
+      "text": "Ndihmon në ruajtjen e përkohshme të informacionit gjatë përpunimit kreativ. Është e rëndësishme për gjenerimin dhe manipulimin e ideve të reja.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Proceset kognitive",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Frenimi kognitiv",
+      "text": "Aftësia për të shtypur informacion të panevojshëm ose të papërshtatshëm për të mbajtur fokusin në problemin kreativ.",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Proceset kognitive",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Porta ndijore",
+      "text": "Filtron informacionin ndijor dhe përcakton çfarë lejohet të hyjë në përpunimin mendor. Ndikon në ndjeshmërinë krijuese.",
+      "background": "#C8E6C9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Proceset kognitive",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Inkubacioni",
+      "text": "Faza kur mendja nuk mendon aktivisht për një problem. Jep pushim nga kërkimi i drejtpërdrejtë dhe lejon punën e pavetëdijshme.",
+      "background": "#B2EBF2"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Mendimit",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mendimi Divergjent",
+      "text": "Gjenerimi i shumë ideve për një problem të hapur. Karakteristika: Rrjedhshmëri, Fleksibilitet, Origjinalitet, Përpunim.",
+      "background": "#BBDEFB"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Mendimit",
+      "subheading": "Psikologjia Kognitive",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mendimi Konvergjent",
+      "text": "Fokusimi në një zgjidhje të vetme më të mirë. Përdoret për zgjidhje të qarta dhe ka më shumë lidhje me inteligjencën sesa kreativitetin.",
+      "background": "#D1C4E9"
+    },
+    "duration": 5000
+  }
+]
