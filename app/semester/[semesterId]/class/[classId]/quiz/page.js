@@ -4,7 +4,13 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Header from "../../../../../components/Header";
 import Footer from "../../../../../components/Footer";
-import { motion, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useMotionValue,
+  useTransform,
+  animate,
+} from "framer-motion";
 
 export default function QuizPage() {
   const params = useParams();
@@ -20,8 +26,11 @@ export default function QuizPage() {
   const [showNextButton, setShowNextButton] = useState(false);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
+  const [showIntermediateResults, setShowIntermediateResults] = useState(false);
   const [correctAnswerIndices, setCorrectAnswerIndices] = useState([]);
   const [questionOrder, setQuestionOrder] = useState([]);
+  const [animatedScore, setAnimatedScore] = useState(0);
+  const [progressWidth, setProgressWidth] = useState("0%");
 
   // Animation variants
   const containerVariants = {
@@ -47,6 +56,17 @@ export default function QuizPage() {
   const resultsVariants = {
     hidden: { scale: 0.9, opacity: 0 },
     visible: { scale: 1, opacity: 1 },
+  };
+
+  const scoreCardVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: (i) => ({
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: i * 0.1,
+      },
+    }),
   };
 
   useEffect(() => {
@@ -151,14 +171,70 @@ export default function QuizPage() {
 
   const handleNextQuestion = () => {
     if (currentQuestion < quiz.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-      setSelectedAnswer(null);
-      setAnswerSubmitted(false);
-      setShowCorrectAnswer(false);
-      setShowNextButton(false);
+      // Show intermediate results after every 10 questions
+      if ((currentQuestion + 1) % 10 === 0) {
+        setShowIntermediateResults(true);
+        // Reset animated values for next animation
+        setAnimatedScore(0);
+        setProgressWidth("0%");
+
+        // Animate the score and progress bar after a small delay
+        setTimeout(() => {
+          animateScoreAndProgress(score, 10);
+        }, 500);
+      } else {
+        setCurrentQuestion(currentQuestion + 1);
+        setSelectedAnswer(null);
+        setAnswerSubmitted(false);
+        setShowCorrectAnswer(false);
+        setShowNextButton(false);
+      }
     } else {
       setShowResults(true);
+      // Reset animated values for final results
+      setAnimatedScore(0);
+      setProgressWidth("0%");
+
+      // Animate the score and progress bar for final results
+      setTimeout(() => {
+        animateScoreAndProgress(score, quiz.length);
+      }, 500);
     }
+  };
+
+  const animateScoreAndProgress = (targetScore, maxScore) => {
+    // Animate the score count
+    let startScore = 0;
+    const scoreAnimation = animate(startScore, targetScore, {
+      duration: 1.5,
+      onUpdate: (latest) => {
+        setAnimatedScore(Math.floor(latest));
+      },
+    });
+
+    // Animate the progress bar
+    let startWidth = 0;
+    const widthAnimation = animate(startWidth, (targetScore / maxScore) * 100, {
+      duration: 2,
+      ease: "easeOut",
+      onUpdate: (latest) => {
+        setProgressWidth(`${latest}%`);
+      },
+    });
+
+    return () => {
+      scoreAnimation.stop();
+      widthAnimation.stop();
+    };
+  };
+
+  const handleContinueTest = () => {
+    setShowIntermediateResults(false);
+    setCurrentQuestion(currentQuestion + 1);
+    setSelectedAnswer(null);
+    setAnswerSubmitted(false);
+    setShowCorrectAnswer(false);
+    setShowNextButton(false);
   };
 
   const handleRestart = () => {
@@ -178,6 +254,7 @@ export default function QuizPage() {
     setShowNextButton(false);
     setScore(0);
     setShowResults(false);
+    setShowIntermediateResults(false);
   };
 
   return (
@@ -213,7 +290,7 @@ export default function QuizPage() {
           >
             Duke ngarkuar kuizin...
           </motion.p>
-        ) : quiz && !showResults ? (
+        ) : quiz && !showResults && !showIntermediateResults ? (
           <div className="max-w-2xl mx-auto">
             <motion.div
               initial="hidden"
@@ -289,7 +366,10 @@ export default function QuizPage() {
                     whileTap={{ scale: 0.98 }}
                     className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
                   >
-                    {currentQuestion < quiz.length - 1
+                    {currentQuestion < quiz.length - 1 &&
+                    (currentQuestion + 1) % 10 === 0
+                      ? "Shih rezultatin"
+                      : currentQuestion < quiz.length - 1
                       ? "Pyetja tjetër"
                       : "Shiko rezultatet"}
                   </motion.button>
@@ -297,6 +377,70 @@ export default function QuizPage() {
               )}
             </motion.div>
           </div>
+        ) : showIntermediateResults ? (
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={resultsVariants}
+            className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6 text-center"
+          >
+            <h2 className="text-2xl font-bold mb-6">
+              Rezultatet Tuaja të Ndërmjetme
+            </h2>
+
+            <motion.div
+              custom={0}
+              initial="hidden"
+              animate="visible"
+              variants={scoreCardVariants}
+              className="mb-6 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg shadow-lg p-6 text-white"
+            >
+              <div className="flex items-center justify-center">
+                <div className="text-6xl font-bold flex items-baseline">
+                  <span className="mr-1">{animatedScore}</span>
+                  <span className="text-3xl">/10</span>
+                </div>
+              </div>
+
+              <div className="w-full bg-white/20 rounded-full h-4 mt-6 overflow-hidden">
+                <motion.div
+                  className="bg-white h-4 rounded-full"
+                  style={{ width: progressWidth }}
+                  initial={{ width: "0%" }}
+                ></motion.div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              custom={1}
+              initial="hidden"
+              animate="visible"
+              variants={scoreCardVariants}
+              className="mb-6"
+            >
+              <div className="text-gray-600 mb-2">Vlerësimi juaj</div>
+              <div className="text-xl font-bold">
+                {score <= 4
+                  ? "Ju duhet të mësoni më shumë"
+                  : score <= 7
+                  ? "Mirë! Por ka vend për përmirësim"
+                  : "Shkëlqyeshëm!"}
+              </div>
+            </motion.div>
+
+            <motion.button
+              custom={2}
+              initial="hidden"
+              animate="visible"
+              variants={scoreCardVariants}
+              onClick={handleContinueTest}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition shadow-md"
+            >
+              Vazhdo me testin tjetër
+            </motion.button>
+          </motion.div>
         ) : showResults ? (
           <motion.div
             initial="hidden"
@@ -304,15 +448,59 @@ export default function QuizPage() {
             variants={resultsVariants}
             className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6 text-center"
           >
-            <h2 className="text-2xl font-bold mb-4">Rezultatet</h2>
-            <p className="text-xl mb-4">
-              Pikët tuaja: {score} nga {quiz.length}
-            </p>
+            <h2 className="text-2xl font-bold mb-6">
+              Rezultatet Përfundimtare
+            </h2>
+
+            <motion.div
+              custom={0}
+              initial="hidden"
+              animate="visible"
+              variants={scoreCardVariants}
+              className="mb-6 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg shadow-lg p-6 text-white"
+            >
+              <div className="flex items-center justify-center">
+                <div className="text-6xl font-bold flex items-baseline">
+                  <span className="mr-1">{animatedScore}</span>
+                  <span className="text-3xl">/{quiz.length}</span>
+                </div>
+              </div>
+
+              <div className="w-full bg-white/20 rounded-full h-4 mt-6 overflow-hidden">
+                <motion.div
+                  className="bg-white h-4 rounded-full"
+                  style={{ width: progressWidth }}
+                  initial={{ width: "0%" }}
+                ></motion.div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              custom={1}
+              initial="hidden"
+              animate="visible"
+              variants={scoreCardVariants}
+              className="mb-6"
+            >
+              <div className="text-gray-600 mb-2">Vlerësimi juaj</div>
+              <div className="text-xl font-bold">
+                {score / quiz.length <= 0.4
+                  ? "Ju duhet të mësoni më shumë"
+                  : score / quiz.length <= 0.7
+                  ? "Mirë! Por ka vend për përmirësim"
+                  : "Shkëlqyeshëm!"}
+              </div>
+            </motion.div>
+
             <motion.button
+              custom={2}
+              initial="hidden"
+              animate="visible"
+              variants={scoreCardVariants}
               onClick={handleRestart}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition shadow-md"
             >
               Rifillo Kuizin
             </motion.button>
