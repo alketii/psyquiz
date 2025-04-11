@@ -1,0 +1,604 @@
+[
+  {
+    "header": {
+      "heading": "Përkufizimi i Këshillimit dhe Psikoterapisë",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Këshillimi",
+      "text": "Këshillimi është një proces ndërveprues që karakterizohet nga një marrëdhënie unike ndërmjet këshilluesit dhe klientit, e cila ndihmon klientin të ndryshojë sjelljet, aftësitë dhe vendimmarrjen.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Përkufizimi i Këshillimit dhe Psikoterapisë",
+      "subheading": "Konceptet Bazike",
+      "profileImage": "https://picsum.photos/100/100"
+    },
+    "content": {
+      "type": "text",
+      "title": "Psikoterapi",
+      "text": "Termi \"Psikoterapi\" u përdor për herë të parë rreth vitit 1800, në shekullin e 19‑të.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Shkollat dhe Qasjet Kryesore",
+      "subheading": "Psikoterapia",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Psikoanalizë",
+      "text": "Freud krijoi psikoanalizën, e cila përfshinte një terapist që fliste me një klient një më një, duke analizuar modelet, veprimet dhe emocionet.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Shkollat dhe Qasjet Kryesore",
+      "subheading": "Psikoterapia",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Terapia psikodinamike",
+      "text": "Terapia psikodinamike eksploron aspektet e pavetëdijshme dhe të vetëdijshme të mendjes njerëzore.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Shkollat dhe Qasjet Kryesore",
+      "subheading": "Psikoterapia",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Terapia Jungiane",
+      "text": "Psikoanaliza dhe terapia Jungiane – forma të hershme të psikoterapisë që u praktikuan para zhvillimit të metodave moderne.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Shkollat dhe Qasjet Kryesore",
+      "subheading": "Psikoterapia",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "CBT (Terapia Kognitive‑Biheviorale)",
+      "text": "Në vitet 1900, bihevioristët ishin më të popullarizuar për terapinë e tyre, e cila u zhvillua në CBT.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Shkollat dhe Qasjet Kryesore",
+      "subheading": "Psikoterapia",
+      "profileImage": "https://picsum.photos/100/101"
+    },
+    "content": {
+      "type": "text",
+      "title": "Psikologjia humaniste",
+      "text": "Qasje e përqendruar te klienti dhe thekson rëndësinë e marrëdhënies terapeutike në psikologjinë klinike.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Metoda dhe Praktika Historike",
+      "subheading": "Historia e Psikoterapisë",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Mesmerizëm",
+      "text": "Përdorimi i magneteve për të lehtësuar shqetësimin (një praktikë ende e përdorur sot).",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Metoda dhe Praktika Historike",
+      "subheading": "Historia e Psikoterapisë",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Frenologji",
+      "text": "Studimi i formës së kafkës.",
+      "background": "#C8E6C9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Metoda dhe Praktika Historike",
+      "subheading": "Historia e Psikoterapisë",
+      "profileImage": "https://picsum.photos/100/102"
+    },
+    "content": {
+      "type": "text",
+      "title": "Lobotomi",
+      "text": "Në vitin 1936, u krye për herë të parë lobotomia për arsye të shëndetit mendor.",
+      "background": "#B2EBF2"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Manuale, Institucione dhe Standarde",
+      "subheading": "Rregullimi i Praktikës",
+      "profileImage": "https://picsum.photos/100/103"
+    },
+    "content": {
+      "type": "text",
+      "title": "DSM",
+      "text": "Manuali i parë Diagnostik dhe Statistikor i Çrregullimeve Mendore (DSM) u botua në 1952 si një mënyrë për psikologët për të diagnostikuar klientët për qëllime klinike.",
+      "background": "#BBDEFB"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Manuale, Institucione dhe Standarde",
+      "subheading": "Rregullimi i Praktikës",
+      "profileImage": "https://picsum.photos/100/103"
+    },
+    "content": {
+      "type": "text",
+      "title": "APA",
+      "text": "Në 1892, u themelua APA (American Psychological Association).",
+      "background": "#D1C4E9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Manuale, Institucione dhe Standarde",
+      "subheading": "Rregullimi i Praktikës",
+      "profileImage": "https://picsum.photos/100/103"
+    },
+    "content": {
+      "type": "text",
+      "title": "Standardet etike",
+      "text": "Në vitin 1953, APA botoi një libër të standardeve etike për praktikuesit e psikoterapistëve dhe psikiatërve.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Figura Historike dhe Botime të Rëndësishme",
+      "subheading": "Historia e Psikoterapisë",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Sigmund Freud",
+      "text": "Freud krijoi psikoanalizën. Puna e tij çoi në zhvillimin e psikodinamikës.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Figura Historike dhe Botime të Rëndësishme",
+      "subheading": "Historia e Psikoterapisë",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Një interpretim i ëndrrave",
+      "text": "Libri i parë i Sigmund Freud‑it, botuar në 1900.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Figura Historike dhe Botime të Rëndësishme",
+      "subheading": "Historia e Psikoterapisë",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Carl Rogers",
+      "text": "Në 1961 botoi \"Për t'u bërë person…\", një shtyllë e psikologjisë humaniste.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Figura Historike dhe Botime të Rëndësishme",
+      "subheading": "Historia e Psikoterapisë",
+      "profileImage": "https://picsum.photos/100/104"
+    },
+    "content": {
+      "type": "text",
+      "title": "Homoseksualiteti (heqja nga DSM)",
+      "text": "Në 1973, homoseksualiteti u hoq nga DSM si gjendje e shëndetit mendor.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Zhvillimet Moderne",
+      "subheading": "Psikoterapia Bashkëkohore",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "MRI",
+      "text": "MRI – Komponentët kimikë në tru, depresioni, trauma.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Zhvillimet Moderne",
+      "subheading": "Psikoterapia Bashkëkohore",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Neuroshkencë",
+      "text": "Në shekullin 21, psikologjia lidhet më shumë me neuroshkencën.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Zhvillimet Moderne",
+      "subheading": "Psikoterapia Bashkëkohore",
+      "profileImage": "https://picsum.photos/100/105"
+    },
+    "content": {
+      "type": "text",
+      "title": "Psikiatria",
+      "text": "Po në shekullin 21, lidhja e ngushtë me psikiatrinë për aspektet mjekësore.",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Aftësitë Bazë të Këshillëdhënësit",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Empati",
+      "text": "Të kuptosh si ndihen të tjerët.",
+      "background": "#C8E6C9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Aftësitë Bazë të Këshillëdhënësit",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Përshtatshmëri",
+      "text": "Të jesh i qëndrueshëm në ato që bën.",
+      "background": "#B2EBF2"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Aftësitë Bazë të Këshillëdhënësit",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Sjellje e pakushtëzuar pozitive",
+      "text": "Pranim pa gjykim.",
+      "background": "#BBDEFB"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Aftësitë Bazë të Këshillëdhënësit",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/106"
+    },
+    "content": {
+      "type": "text",
+      "title": "Fshehtësia",
+      "text": "Ruaj konfidencialitetin.",
+      "background": "#D1C4E9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Barrierat e Komunikimit",
+      "subheading": "Sfida në Këshillim",
+      "profileImage": "https://picsum.photos/100/107"
+    },
+    "content": {
+      "type": "text",
+      "title": "Heshtja",
+      "text": "Klienti nuk flet për një kohë të gjatë.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Barrierat e Komunikimit",
+      "subheading": "Sfida në Këshillim",
+      "profileImage": "https://picsum.photos/100/107"
+    },
+    "content": {
+      "type": "text",
+      "title": "Pasiviteti",
+      "text": "Heshtja e këshillëdhënësit mund të shkaktojë anksiozitet.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Barrierat e Komunikimit",
+      "subheading": "Sfida në Këshillim",
+      "profileImage": "https://picsum.photos/100/107"
+    },
+    "content": {
+      "type": "text",
+      "title": "Dominim i këshillëdhënësit",
+      "text": "Ndërpret, jep leksione.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Barrierat e Komunikimit",
+      "subheading": "Sfida në Këshillim",
+      "profileImage": "https://picsum.photos/100/107"
+    },
+    "content": {
+      "type": "text",
+      "title": "Pyetje të tepruara",
+      "text": "Zvogëlojnë vetëzbulimin e klientit.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Struktura e Procesit të Këshillimit",
+      "subheading": "Procedura e Këshillimit",
+      "profileImage": "https://picsum.photos/100/108"
+    },
+    "content": {
+      "type": "text",
+      "title": "Hyrja",
+      "text": "Përshëndet klientin, prezentohu, thekso konfidencialitetin, shpjego procesin, vendos raport besimi.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Struktura e Procesit të Këshillimit",
+      "subheading": "Procedura e Këshillimit",
+      "profileImage": "https://picsum.photos/100/108"
+    },
+    "content": {
+      "type": "text",
+      "title": "Intervista",
+      "text": "Puno së bashku, identifiko prioritetin, menaxhimin, mbështetjet, inkurajo përgjegjësinë.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Struktura e Procesit të Këshillimit",
+      "subheading": "Procedura e Këshillimit",
+      "profileImage": "https://picsum.photos/100/108"
+    },
+    "content": {
+      "type": "text",
+      "title": "Përmbledhja",
+      "text": "Përmblidh çfarë ndodhi dhe çfarë do bëhet, ofro mbështetje të vazhdueshme, verifiko kuptimin, mbyll seancën.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Këshillimit",
+      "subheading": "Format e Këshillimit",
+      "profileImage": "https://picsum.photos/100/109"
+    },
+    "content": {
+      "type": "text",
+      "title": "Këshillim individual",
+      "text": "Një‑më‑një.",
+      "background": "#FFECB3"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Këshillimit",
+      "subheading": "Format e Këshillimit",
+      "profileImage": "https://picsum.photos/100/109"
+    },
+    "content": {
+      "type": "text",
+      "title": "Këshillim në grup",
+      "text": "Disa klientë njëkohësisht.",
+      "background": "#C8E6C9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Këshillimit",
+      "subheading": "Format e Këshillimit",
+      "profileImage": "https://picsum.photos/100/109"
+    },
+    "content": {
+      "type": "text",
+      "title": "Këshillim afatshkurtër",
+      "text": "Kohëzgjatje e limituar, objektiva specifike.",
+      "background": "#B2EBF2"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Llojet e Këshillimit",
+      "subheading": "Format e Këshillimit",
+      "profileImage": "https://picsum.photos/100/109"
+    },
+    "content": {
+      "type": "text",
+      "title": "Këshillim afatgjatë",
+      "text": "Kohëzgjatje e gjatë, zhvillim personal i thelluar.",
+      "background": "#BBDEFB"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Sfidat e Këshillëdhënësve Fillestar",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/110"
+    },
+    "content": {
+      "type": "text",
+      "title": "Ballafaqim me mundimet e veta",
+      "text": "Pyetje dhe pasiguri para klientit të parë.",
+      "background": "#D1C4E9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Sfidat e Këshillëdhënësve Fillestar",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/110"
+    },
+    "content": {
+      "type": "text",
+      "title": "Largim nga perfekcionizmi",
+      "text": "Pranimi i gabimeve dhe i të panjohurave.",
+      "background": "#FFDE59"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Sfidat e Këshillëdhënësve Fillestar",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/110"
+    },
+    "content": {
+      "type": "text",
+      "title": "Kuptimi i heshtjes",
+      "text": "Interpretimi dhe menaxhimi i heshtjes së klientit.",
+      "background": "#FF914D"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Sfidat e Këshillëdhënësve Fillestar",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/110"
+    },
+    "content": {
+      "type": "text",
+      "title": "Durimi i mos sigurisë",
+      "text": "Pranimi i mungesës së rezultateve të menjëhershme.",
+      "background": "#7ED957"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Rezultatet dhe Konceptet e Procesit",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/111"
+    },
+    "content": {
+      "type": "text",
+      "title": "Ndërgjegjësimi",
+      "text": "Rrit vetëdijen për veten dhe problemet.",
+      "background": "#36CFC9"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Rezultatet dhe Konceptet e Procesit",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/111"
+    },
+    "content": {
+      "type": "text",
+      "title": "Aftësimi për përballimin e problemit personal",
+      "text": "Mëson strategji vetë‑përballimi.",
+      "background": "#4D9DFF"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Rezultatet dhe Konceptet e Procesit",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/111"
+    },
+    "content": {
+      "type": "text",
+      "title": "Kontratransfer",
+      "text": "Ngatërrim emocional i roleve.",
+      "background": "#F8BBD0"
+    },
+    "duration": 5000
+  },
+  {
+    "header": {
+      "heading": "Rezultatet dhe Konceptet e Procesit",
+      "subheading": "Praktika e Këshillimit",
+      "profileImage": "https://picsum.photos/100/111"
+    },
+    "content": {
+      "type": "text",
+      "title": "Supervizor",
+      "text": "Mbështet dhe udhëzon këshillëdhënësin fillestar.",
+      "background": "#B388FF"
+    },
+    "duration": 5000
+  }
+]

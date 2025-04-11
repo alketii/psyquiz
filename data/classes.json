@@ -22,7 +22,7 @@
           "description": "Teoritë e këshillimit psikologjik",
           "credits": 6,
           "hasMainMaterial": true,
-          "hasVocabulary": false,
+          "hasVocabulary": true,
           "hasAlternativeMaterial": true,
           "hasQuiz": false
         },

@@ -1,152 +1,173 @@
-## 1. Bazat e Këshillimit Psikologjik
+## 1. Përkufizimi i Këshillimit dhe Psikoterapisë
+**Këshillimi**  
+Këshillimi është një proces ndërveprues që karakterizohet nga një marrëdhënie unike ndërmjet këshilluesit dhe klientit, e cila ndihmon klientin të ndryshojë sjelljet, aftësitë dhe vendimmarrjen.
 
-1. **Këshillim**  
-Proces ndëraktiv mes një këshilluesi dhe një klienti me qëllim ndryshimi të sjelljes, aftësive dhe vendimmarrjes.
+**Psikoterapi**  
+Termi "Psikoterapi" u përdor për herë të parë rreth vitit 1800, në shekullin e 19‑të.
 
-2. **Këshillëdhënës**  
-Personi profesional që udhëheq dhe mbështet klientin gjatë këshillimit.
+---
 
-3. **Marrëdhënie këshilluese**  
-Lidhje profesionale dhe personale ndërmjet këshilluesit dhe klientit që nxit rritje dhe zhvillim personal.
+## 2. Shkollat dhe Qasjet Kryesore
+**Psikoanalizë**  
+Freud krijoi psikoanalizën, e cila përfshinte një terapist që fliste me një klient një më një, duke analizuar modelet, veprimet dhe emocionet.
 
-4. **Seancë e vetme**  
-Një takim unik këshillimi që nuk vazhdon më tej.
+**Terapia psikodinamike**  
+Terapia psikodinamike eksploron aspektet e pavetëdijshme dhe të vetëdijshme të mendjes njerëzore.
 
-5. **Këshillim afatshkurtër**  
-Proces këshillimi që zgjat për një kohë të kufizuar me objektiva të caktuara.
+**Terapia Jungiane**  
+Psikoanaliza dhe terapia Jungiane – forma të hershme të psikoterapisë që u praktikuan para zhvillimit të metodave moderne.
 
-6. **Këshillim afatgjatë**  
-Proces këshillimi që shtrihet në një periudhë të gjatë kohore.
+**CBT (Terapia Kognitive‑Biheviorale)**  
+Në vitet 1900, bihevioristët ishin më të popullarizuar për terapinë e tyre, e cila u zhvillua në CBT.
 
-## 2. Komunikimi dhe Marrëdhënia
+**Psikologjia humaniste**  
+Qasje e përqendruar te klienti dhe thekson rëndësinë e marrëdhënies terapeutike në psikologjinë klinike.
 
-7. **Reflektim emocional**  
-Teknikë ku këshillëdhënësi pasqyron ndjenjat që klienti shpreh ose përjeton.
+---
 
-8. **Konfidencialitet**  
-Parimi profesional që mbron informacionin e ndarë nga klienti.
+## 3. Metoda dhe Praktika Historike
+**Mesmerizëm**  
+Përdorimi i magneteve për të lehtësuar shqetësimin (një praktikë ende e përdorur sot).
 
-9. **Kufij profesionalë**  
-Vijat ndarëse që ruajnë marrëdhënien profesionale midis këshilluesit dhe klientit.
+**Frenologji**  
+Studimi i formës së kafkës.
 
-10. **Kontratransfer**  
-Reagime emocionale të këshillëdhënësit ndaj klientit, të cilat burojnë nga përvojat e tij personale.
+**Lobotomi**  
+Në vitin 1936, u krye për herë të parë lobotomia për arsye të shëndetit mendor.
 
-11. **Heshtje terapeutike**  
-Një teknikë që i jep hapësirë klientit për reflektim gjatë këshillimit.
+---
 
-12. **Udhëzim**  
-Ofrimi i mbështetjes pa dhënë këshilla direkte; ndihmon klientin të zbulojë zgjidhjet vetë.
+## 4. Manuale, Institucione dhe Standarde
+**DSM**  
+Manuali i parë Diagnostik dhe Statistikor i Çrregullimeve Mendore (DSM) u botua në 1952 si një mënyrë për psikologët për të diagnostikuar klientët për qëllime klinike.
 
-## 3. Llojet e Komunikimit
+**APA**  
+Në 1892, u themelua APA (American Psychological Association).
 
-13. **Komunikim indirekt verbal**  
-Fjalë që përdoren për të shmangur shprehjen direkte të ndjenjave ose problemeve.
+**Standardet etike (libri i APA 1953)**  
+Në vitin 1953, APA botoi një libër të standardeve etike për praktikuesit e psikoterapistëve dhe psikiatërve.
 
-14. **Komunikim jo verbal**  
-Sjellje, mimika, gjeste ose shenja që shprehin emocione ose përmbajtje pa fjalë.
+---
 
-15. **Komunikim indirekt jo verbal**  
-Shprehje të shtypura që manifestohen përmes simptomave fizike ose sjelljes së tërhequr.
+## 5. Figura Historike dhe Botime të Rëndësishme
+**Sigmund Freud**  
+Freud krijoi psikoanalizën… Puna e tij çoi në zhvillimin e psikodinamikës.
 
-## 4. Aspektet Emocionale dhe Sfidat
+**Një interpretim i ëndrrave**  
+Libri i parë i Sigmund Freud‑it, botuar në 1900.
 
-16. **Pasqyrim**  
-Teknikë për të përforcuar ose sqaruar përvojat emocionale të klientit duke përdorur fjalët e tij.
+**Lightner Witmer**  
+Në 1896, hapi klinikën e parë psikologjike.
 
-17. **Intelektualizim**  
-Tendencë për të shmangur ndjenjat duke analizuar situatën në mënyrë logjike ose abstrakte.
+**Joseph Jastrow**  
+Në 1886, mori doktoraturën e parë në psikologji (Univ. John Hopkins).
 
-18. **Sjellje e mirë e tepruar**  
-Qasje që mban distancë emocionale përmes sjelljeve shumë të sjellshme por jorealiste.
+**Margaret Washburn**  
+Gruaja e parë që fitoi një doktoraturë në psikologji (1894).
 
-19. **Ndalim i shprehjes emocionale**  
-Ndërprerja ose ndalimi i klientit nga të qarët apo shfaqja e ndjenjave të forta.
+**Carl Rogers**  
+Në 1961 botoi “Për t’u bërë person…”, një shtyllë e psikologjisë humaniste.
 
-20. **Durimi i pasigurisë**  
-Aftësia për të toleruar paqartësinë dhe mungesën e rezultateve të menjëhershme në këshillim.
+**Homoseksualiteti (heqja nga DSM)**  
+Në 1973, homoseksualiteti u hoq nga DSM si gjendje e shëndetit mendor.
 
-21. **Psikoanalizë**  
-Një qasje terapeutike e zhvilluar nga Sigmund Freud që përfshin analizimin e modeleve, veprimeve dhe emocioneve në një mjedis një më një.
+---
 
-22. **Psikoterapi**  
-Një praktikë që u shfaq në vitet 1800, duke përfshirë trajtimin e shëndetit mendor përmes dialogut dhe analizës.
+## 6. Zhvillimet Moderne
+**MRI**  
+MRI – Komponentët kimikë në tru, depresioni, trauma.
 
-23. **Empati**  
-Aftësia për të kuptuar dhe ndarë ndjenjat e tjetrit, një aftësi thelbësore për këshilluesit.
+**Neuroshkencë**  
+Në shekullin 21, psikologjia lidhet më shumë me neuroshkencën.
 
-24. **Përshtatshmëri**  
-Aftësia për të qëndruar i qëndrueshëm në veprime, një tipar thelbësor për këshillimin efektiv.
+**Psikiatria**  
+Po në shekullin 21, lidhja e ngushtë me psikiatrinë për aspektet mjekësore.
 
-25. **Sjellje e pakushtëzuar pozitive**  
-Pranimi i klientit edhe kur nuk jeni dakord me sjelljen e tij/saj.
+---
 
-26. **Fshehtësia**  
-Ruajtja e konfidencialitetit, një parim themelor në këshillim.
+## 7. Aftësitë Bazë të Këshillëdhënësit
+**Empati** – Të kuptosh si ndihen të tjerët.  
+**Përshtatshmëri** – Të jeni i qëndrueshëm në ato që bëni.  
+**Sjellje e pakushtëzuar pozitive** – Pranim pa gjykim.  
+**Respekti** – Lejo klientin të shprehet lirisht.  
+**Fshehtësia** – Ruaj konfidencialitetin.  
+**Përgjegjësia** – Informo për hapat dhe vendimet.  
+**Ndershmëria** – Vendime të lira, informacion i saktë.  
+**Të kuptuarit** – Kuptimi i ndryshimeve individuale.  
+**Afrimitet** – Ngrohtësi ndaj nevojave të klientit.  
+**Respekto** – Respekto diversitetin njerëzor.  
+**Efektshmëri** – Puno mirë nën presion.  
+**Elasticitet** – I hapur ndaj reagimeve të papritura.
 
-27. **Përgjegjësia**  
-Ofrimi i klientëve me informacion të lidhur me angazhimin dhe vendimmarrjen.
+---
 
-28. **Elasticitet**  
-Të qenit i hapur ndaj reagimeve të papritura, opinioneve ose vendimeve.
+## 8. Barrierat e Komunikimit
+**Heshtja** – Klienti nuk flet për një kohë të gjatë.  
+**Pasiviteti** – Heshtja e këshillëdhënësit mund të shkaktojë anksiozitet.  
+**Dominim i këshillëdhënësit** – Ndërpret, jep leksione.  
+**Pyetje të tepruara** – Zvogëlojnë vetëzbulimin e klientit.  
+**Ndalim i të qamurit** – Mbron këshillëdhënësin, dëmton procesin.  
+**Insistim në interaksion social** – Bisedë sipërfaqësore, jo këshilluese.  
+**Sjellje e mirë e tepruar** – Mbetet në “periudhën e mjaltit”.  
+**Intelektualizmi** – Ul efikasitetin e procesit.  
+**Përdorimi i zhargonit profesional** – Krijon konfuzitet.  
+**Nënvlerësimi** – Tregon mungesë respekti.  
+**Argumentimi** – Injoron ndjenjat e klientit.  
+**Presioni** – Mund të shkaktojë frikë, faj, rezistencë.
 
-29. **Heshtje terapeutike**  
-Një teknikë që i jep hapësirë klientit për reflektim gjatë këshillimit.
+---
 
-30. **Kontratransfer**  
-Reagime emocionale të këshillëdhënësit ndaj klientit, të cilat burojnë nga përvojat e tij personale.
+## 9. Struktura e Procesit të Këshillimit
+**Struktura e procesit** – Hyrja, Intervista, Përmbledhja.
 
-31. **Dominim i këshillëdhënësit**  
-Përveç këshillëdhënësit pasiv, mund të hasim edhe këshillëdhënës dominant. Këshillëdhënësit e tillë nuk mund të marrin informata të mjaftueshme. Mund para kohe të sjellë përfundime pa e kuptuar situatën në tërësi.
+### Hyrja  
+Përshëndet klientin, prezentohu, thekso konfidencialitetin, shpjego procesin, vendos raport besimi.
 
-32. **Pyetje të tepruara**  
-Pyetjet e tepruara mund të kenë efekt të kundërt sepse e zvogëlojnë verbalizimin e klientit dhe vetëzbulimin e tij.
+### Intervista  
+Puno së bashku, identifiko prioritetin, menaxhimin, mbështetjet, inkurajo përgjegjësinë.
 
-33. **Ndalim i shprehjes së emocioneve të qamurit**  
-Një prej masave ekstreme që mbron këshillëdhënësin nga emocionet e forta është ndalimi i të qamurit.
+### Përmbledhja  
+Përmblidh çfarë ndodhi dhe çfarë do bëhet, ofro mbështetje të vazhdueshme, verifiko kuptimin, mbyll seancën.
 
-34. **Insistim në interaksion social**  
-Një formë distancimi është komunikimi me klientin për ngjarjet e përditshme.
+---
 
-35. **Sjellje e mirë e tepruar**  
-Kjo është një formë tjetër distancimi. Kur klienti shpreh probleme dhe emocione përmes urrejtjes, mekanizmave mbrojtës e barrierave, këshillëdhënësi mund të mbajë distancë duke luajtur rolin e "personit të sjellshëm".
+## 10. Llojet e Këshillimit
+**Këshillim individual** – Një‑më‑një.  
+**Këshillim në grup** – Disa klientë njëkohësisht.  
+**Këshillim përmes telefonit** – Në distancë, me telefon.  
+**Këshillim me një seancë të vetme** – Vetëm një takim.  
+**Këshillim afatshkurtër** – Kohëzgjatje e limituar, objektiva specifike.  
+**Këshillim afatgjatë** – Kohëzgjatje e gjatë, zhvillim personal i thelluar.
 
-36. **Intelektualizmi**  
-Çdo komunikim i intelektualizuar zvogëlon efikasitetin e procesit.
+---
 
-37. **Përdorimi i zhargonit profesional**  
-I sjell pak dobi klientit dhe krijon konfuzitet.
+## 11. Roli i Këshillëdhënësit dhe Reagimet e Klientit
+**Roli i këshillëdhënësit** – Krijon hapësirë për eksplorim dhe vendim‑marrje.  
+**Klienti fillon të qajë** – Shpreh lirshëm emocionet.  
+**Klienti refuzon ndihmën** – Refuzon mbështetjen gjatë seancës.
 
-38. **Nënvlerësimi**  
-Përdorimi i nënvlerësimit është joefikas dhe tregon mungesë respekti.
+---
 
-39. **Argumentimi**  
-Argumentimi në proces injoron ndjenjat dhe këndvështrimet e klientit.
+## 12. Rezultatet dhe Konceptet e Procesit
+**Ndërgjegjësimi** – Rrit vetëdijen për veten dhe problemet.  
+**Aftësimi për përballimin e problemit personal** – Mëson strategji vetë‑përballimi.  
+**Kontratransfer** – Ngatërrim emocional i roleve.  
+**Supervizor** – Mbështet dhe udhëzon këshillëdhënësin fillestar.
 
-40. **Presioni**  
-Shumë këshillëdhënës gabojnë kur bëjnë presion që klienti të zhvillohet sa më shpejt.
+---
 
-41. **Ballafaqim me mundimet e veta**  
-Shumica e këshillëdhënësve fillestar, pavarësisht nga përgatitja akademike, takimin e parë me klient e presin me ambivalencë.
+## 13. Sfidat e Këshillëdhënësve Fillestar
+**Ballafaqim me mundimet e veta** – Pyetje dhe pasiguri para klientit të parë.  
+**Si të jem ai/ajo që jam…** – Nevoja për natyralitet kundrejt rolit profesional.  
+**Largim nga perfekcionizmi** – Pranimi i gabimeve dhe i të panjohurave.  
+**Kuptimi i heshtjes** – Interpretimi dhe menaxhimi i heshtjes së klientit.  
+**Dalja në fund me kërkesat e klientit** – Vendosja e kufijve.  
+**Durimi i mos sigurisë** – Pranimi i mungesës së rezultateve të menjëhershme.  
+**Si të mos e humbësh veten me klientët** – Parandalimi i mbingarkesës emocionale.  
+**Përcaktimi i rolit të juaj si këshillëdhënës** – Zgjedhja e stilit personal (mik, udhëzues, etj.).
 
-42. **Si të jem ai/ajo që jam dhe si ta tregoj këtë?**  
-Pasi që si fillestar jemi mjaft konfuz dhe të hutuar, anojmë nga ajo që tej mase të përqendrohemi në atë që shënon në libra.
+---
 
-43. **Largim nga perfekcionizmi**  
-Këshillëdhënësit fillestar shpesh mendojnë: "Patjetër duhet të jem këshillëdhënës i përkryer, përndryshe do dëmtoj klientin."
-
-44. **Kuptimi i heshtjes**  
-Heshtja për këshillëdhënësit fillestar mund të duket si një përjetësi.
-
-45. **Dalja në fund me kërkesat e klientit**  
-Disa klientë kanë shumë kërkesa: telefonata të shpeshta, takime të gjata, kërkesa për kontakt jashtë zyrës.
-
-46. **Durimi i mos sigurisë**  
-Fillestarët shpesh ndjehen të pasigurt sepse nuk shohin rezultate të menjëhershme.
-
-47. **Si të mos e humbësh veten me klientët**  
-Gabim i zakonshëm është mbingarkimi emocional me hallet e klientëve.
-
-48. **Përcaktimi i rolit të juaj si këshillëdhënës**  
-Një nga sfidat kryesore: **çfarë roli dua të kem si këshillëdhënës?**
-
+## 14. Terma Plotësues
+**MRI** – Komponentët kimikë në tru, depresioni, trauma.  
+**Empati, Respekt, Elasticitet, …** – (shih seksionin 7 për listën e plotë të aftësive).
